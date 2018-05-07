@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="header-wrapper">
+  <h3 class="header-subtitle">Jekyll site of</h3>
+  <h1 class="header-jumbo">WordPress Developer in the making</h1>
+  <h3 class="header-subtitle">Yes, well...</h3>
+</div>
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  <div class="techs">
+    <h1 class="home-head">TECHNOLOGIES</h1>
+    <ul class="tech-list">
+        <li>HTML</li>
+        <li>CSS/SASS</li>
+        <li class="lang-tag">JavaScript/JSON&#38;JQuery</li>
+        <li class="lang-tag">PHP</li>
+        <li class="cms-tag">WordPress</li>
+        <li class="cms-tag">Drupal</li>
+    </ul>
+  </div>
+
+  {% include projects-home.html -%}
+
+  {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>
