@@ -19,13 +19,18 @@ body {
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
        -o-font-feature-settings: "kern" 1;
           font-feature-settings: "kern" 1;
-  font-kerning: normal;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 
@@ -37,7 +42,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 3;
 }
 
 
@@ -105,6 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $text-link-color;
   text-decoration: none;
+  font-weight: 800;
 
   &:visited {
     color: $text-link-color;
@@ -175,7 +181,6 @@ pre {
  * Wrapper
  */
 .wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
   max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
@@ -184,7 +189,6 @@ pre {
   @extend %clearfix;
 
   @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
@@ -209,16 +213,18 @@ pre {
  */
 
 .svg-icon {
-    width: 16px;
-    height: 16px;
+    width: 30px;
+    height: 30px;
     display: inline-block;
-    fill: #{$grey-color};
+    fill: $brand-color;
     padding-right: 5px;
-    vertical-align: text-top;
+    &:hover {
+      fill: $text-color;
+    }
 }
 
 .social-media-list {
-  li + li {
+  li {
     padding-top: 5px;
   }
 }
