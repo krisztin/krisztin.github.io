@@ -56,15 +56,12 @@
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     max-width: 100%;
 }
 
 .project-card {
     border: 4px $brand-color solid;
-    margin: 15px;
+    margin: 15px 10px 0px 0px;
     padding: 5px;
     -ms-flex-preferred-size: 200px;
     flex-basis: 200px;
