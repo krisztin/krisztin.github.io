@@ -22,6 +22,10 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $table-text-align: left !default;
 
+@mixin border {
+  border: 5px solid $brand-color;
+}
+
 // Width of the content area
 $content-width:    1000px !default;
 
@@ -49,5 +53,6 @@ $on-laptop:        800px !default;
 @import
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting"
+  "minima/syntax-highlighting",
+  "minima/home"
 ;

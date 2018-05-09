@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="header-wrapper">
   <h3 class="header-subtitle">Jekyll site of a</h3>
-  <h1 class="header-jumbo">WordPress Developer in the making</h1>
+  <h1 class="header-jumbo">Drupal Developer Apprentice</h1>
   <h3 class="header-subtitle">Yes, well...</h3>
 </div>
 <div class="home">
@@ -11,40 +11,22 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
+  <!-- {{ content }} -->
 
-  <div class="techs">
-    <h1 class="home-head">TECHNOLOGIES</h1>
-    <ul class="tech-list">
-        <li>HTML</li>
-        <li>CSS/SASS</li>
-        <li class="lang-tag">JavaScript/JSON&#38;JQuery</li>
-        <li class="lang-tag">PHP</li>
-        <li class="cms-tag">WordPress</li>
-        <li class="cms-tag">Drupal</li>
-    </ul>
+  <div class="product">
+    <h1 class="home-head">&#60; Product &#62;</h1>
+    <p>I am working with the team responsible for <a href="https://wellcome.ac.uk" target="_blank">wellcome.ac.uk</a>. <strong>How is it?</strong></p>
+    <a class="home-link" href="#">Working at Wellcome posts</a>
   </div>
 
-  {% include projects-home.html -%}
+  {% include home-projects.html -%}
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%}
+  {% include home-posts.html -%}
 
+  <div class="tag-cloud">
+    <h1 class="home-head">&#60; Topics &#62;</h1>
+    {% for category in site.categories %}
+    <a class="tag-link">{{ category | first }}</a>
+    {% endfor %}
+  </div>
 </div>

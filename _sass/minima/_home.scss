@@ -1,0 +1,137 @@
+/**
+ * Global
+ */
+
+.home-head {
+    text-align: center;
+    line-height: $base-line-height * 2;
+    text-transform: uppercase;
+}
+
+/**
+ * Techs
+ */
+
+.tech-list {
+    text-align: center;
+}
+
+.tech-list>li {
+    list-style-type: none;
+    line-height: $base-line-height * 1.4;
+    display: inline;
+    padding: 5px;
+    background-color: $grey-color-dark;
+    color: $text-color-light;
+    font-weight: 800;
+    &:hover {
+        background-color: $brand-color;
+    }
+}
+
+/**
+   * Product
+   */
+
+.home-link {
+    padding: 10px;
+    line-height: $base-line-height*2;
+    @include border;
+    &:hover {
+        background-color: $brand-color;
+        color: $text-color-light;
+    }
+}
+
+/**
+   * Projects
+   */
+
+.flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.project-card {
+    border: 4px $brand-color solid;
+    margin: 15px;
+    padding: 5px;
+    -ms-flex-preferred-size: 200px;
+    flex-basis: 200px;
+    &:hover {
+        background-color: $brand-color;
+        color: $text-color-light;
+        >a {
+            color: $text-color;
+        }
+    }
+    >a:hover {
+        text-decoration: none;
+    }
+}
+
+.tag {
+    padding: 5px;
+    line-height: $base-line-height * 1.4;
+    font-weight: bold;
+    white-space: nowrap;
+    background-color: $grey-color-dark;
+    color: $text-color-light;
+    display: inline;
+}
+
+/* posts */
+
+.post-list-heading {
+    @include relative-font-size(1.75);
+}
+
+.post-list {
+    list-style: none;
+    @extend %clearfix;
+    li {
+        max-width: 50%;
+        float: left;
+        margin: 0 5px 5px 0;
+        background-color: $grey-color-light;
+        padding: 10px;
+    }
+}
+
+.post-link {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 700px) {
+    .post-list {
+        margin-left: 0px;
+        li {
+            max-width: 100%;
+            display: block;
+            margin: 0 0 5px 0;
+            float: none;
+        }
+    }
+}
+
+/* tag cloud */
+
+.tag-link {
+    padding: 10px;
+    line-height: $base-line-height*2;
+    @include border;
+    &:hover {
+        background-color: $brand-color;
+        color: $text-color-light;
+    }
+}
