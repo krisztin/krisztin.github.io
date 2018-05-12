@@ -96,6 +96,7 @@
 .post-list {
     list-style: none;
     @extend %clearfix;
+    margin-left: 0px;
     li {
         max-width: 50%;
         float: left;
@@ -125,7 +126,7 @@
 
 .tag-link {
     padding: 10px;
-    line-height: $base-line-height*2;
+    line-height: $base-line-height*2.5;
     @include border;
     &:hover {
         background-color: $brand-color;
