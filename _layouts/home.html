@@ -25,11 +25,13 @@ layout: default
 
   <div class="tag-cloud">
     <h1 class="home-head">&#60; Topics &#62;</h1>
-    <span><a class="tag-link" href="{{ site.baseurl }}{% link blog/category/work.md %}">Work</a>
-    <p>Things that happen Monday to Friday 9 to 5.</p></span>
-    <span><a class="tag-link" href="{{ site.baseurl }}{% link blog/category/learn.md %}">Learn</a>
-      <p>I could tag all posts with this but I won't.</p></span>
-    <span><a class="tag-link" href="{{ site.baseurl }}{% link blog/category/play.md %}">Play</a>
-    <p>Building stuff for fun.</p></span>
+    <div class="home-tags">
+   <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/work.md %}">Work</a>
+    <span>Things that happen Monday to Friday 9 to 5.</span><br>
+   <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/learn.md %}">Learn</a>
+      <span>I could tag all posts with this but I won't.</span><br>
+   <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/play.md %}">Play</a>
+    <span>Building stuff for fun.</span>
+  </div>
   </div>
 </div>
