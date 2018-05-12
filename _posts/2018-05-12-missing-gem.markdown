@@ -3,7 +3,7 @@ layout: post
 title:  The Quest for a Missing Ruby Gem
 date:   2018-05-12 14:00:06 +0100
 category: learn
-tags: Q1
+tags: ruby jekyll
 ---
 
 My Jekyll environment was running smoothly...for less than a week. I still do not know how I have managed to break it because I have most certainly not touched any of my gems but today as I've tried to run jekyll serve this popped up.

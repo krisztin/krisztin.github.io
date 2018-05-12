@@ -3,7 +3,7 @@ layout: post
 title:  Switching to Jekyll
 date:   2018-05-08 21:15:06 +0100
 category: play
-tags: jekyll q1
+tags: jekyll
 ---
 
 After the great, [error message filled adventure of switching to Linux][switching-ubuntu], I have decided - in the name of nudging myself out of my comfort zones - to switch my blog to Jekyll.

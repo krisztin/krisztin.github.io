@@ -16,7 +16,7 @@ layout: default
   <div class="product">
     <h1 class="home-head">&#60; Product &#62;</h1>
     <p>I am working with the team responsible for <a href="https://wellcome.ac.uk" target="_blank">wellcome.ac.uk</a>. <strong>How is it?</strong></p>
-    <a class="home-link" href="blog/category/work/">Working at Wellcome posts</a>
+    <a class="home-link" href="blog/category/work">Working at Wellcome posts</a>
   </div>
 
   {% include home-projects.html -%}
@@ -25,8 +25,9 @@ layout: default
 
   <div class="tag-cloud">
     <h1 class="home-head">&#60; Topics &#62;</h1>
-    {% for tag in site.tags %}
-    <a class="tag-link">{{ tag | first }}</a>
-    {% endfor %}
+    <a class="tag-link" href="blog/work/">Work</a>
+    <p>Things that happen Monday to Friday 9 to 5.</p>
+    <a class="tag-link" href="blog/play/">Play</a>
+    <p>Coding for fun.</p>
   </div>
 </div>
