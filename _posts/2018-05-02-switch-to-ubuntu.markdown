@@ -11,16 +11,16 @@ It has always been in the back of my mind to finally rid myself of Windows and c
 
 **Microsoft lost the plot**
 
-I get that the new slogan for tech is ‘privacy is dead’ but do you have to execute it in such a public manner?
+I get that the new slogan for tech is *‘privacy is dead’* but do you have to execute it in such a public manner?
 
 **No more games for me**
 
-I haven’t gone on a rampage ride in Euro Truck Simulator in a long, long time and my loyal subjects in Democracy 3 haven’t had to endure my tyran---leadership in a while.
+I haven’t gone on a rampage ride in Euro Truck Simulator in a long, long time and my loyal subjects in Democracy 3 haven’t had to endure my tyran--leadership in a while.
 
 **Editing open source**
 
 Film and photography is a very expensive hobby. You have to buy a decent DSLR then start buying lenses, lights, tripods, rigs and when you are all kitted out (which never really happens) you have to pay the Adobe gods every month...Seriously, I need another hobby, like programming...oh wait.
-Slowly but surely I have moved to open source alternatives for all my media editing tools (as well as LibreOffice or GoogleDocs and co.).
+Slowly but surely I have moved to open source alternatives for all my media editing tools as well as LibreOffice or GoogleDocs and co..
 
 **Apple eww**
 
@@ -35,6 +35,8 @@ Ubuntu on
 ----
 
 A few days ago I’ve finally made the jump. Didn’t go for dual but went straight ahead purging Windows completely. Since then I got into a bootloop (not Ubuntu’s fault, but on a related note, it's so much fun trying to troubleshoot a bootloop on an SSD /s) and lost sound (again, not Ubuntu’s fault, I’ve got a bit trigger happy and deleted a system folder...long story. I’ve fixed it).
+
+![ubuntu install screen]({{ site.url }}/assets/img/ubuntu-install.png)
 
 **First impressions**
 It smells a lot like Apple - and I don't mean Unix but the looks. Really don’t like the whole dock concept, that it has to be seperate from the system tray. Such a waste of screen space.
