@@ -3,9 +3,8 @@ layout: page
 title: Blog
 ---
 
-
 {%- for post in site.posts -%}
-    <article>
+    <article class="blog-listing">
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">
