@@ -219,6 +219,19 @@ h1 {
   @include relative-font-size(1.5);
 }
 
+.post-tag {
+  padding: 3px;
+  background-color: $brand-color;
+  color: $text-color-light;
+  border-radius: 5px;
+  &:hover {
+    background-color: $grey-color-light;
+  }
+  &:visited {
+    color: $text-color-light;
+  }
+}
+
 /**
  * Posts
  */

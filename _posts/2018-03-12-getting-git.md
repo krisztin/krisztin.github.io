@@ -3,6 +3,7 @@ layout: post
 title:  Getting Git
 date:   2018-03-12 11:15:06 +0100
 category: learn
+tags: [apprentice antics, git]
 ---
 
 Having only done development back in the days when 'version control' was duplicating files and adding version numbers at the end, it was quite the thing to wrap my head around what Git could do (and oh boy, can it do sooo much), how it works and how not to completely mess up my branches.

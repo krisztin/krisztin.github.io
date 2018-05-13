@@ -3,6 +3,7 @@ layout: post
 title:  Next StePHPs
 date:   2018-02-01 11:15:06 +0100
 category: learn
+tags: PHP treehouse
 ---
 
 So far my courses have only involved learning HTML, CSS and JavaScript (and JQuery and JSON). Now, after my Drupal Bootcamp and having admined a Wordpress website for two years, it was time to shift my focus on CMSs and that means it's time for: PHP.

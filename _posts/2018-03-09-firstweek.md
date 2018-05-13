@@ -3,6 +3,7 @@ layout: post
 title:  "First Week: Wow"
 date:   2018-03-09 17:15:06 +0100
 category: work
+tags: wellcome
 ---
 
 Wow.
