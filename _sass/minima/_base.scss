@@ -59,26 +59,18 @@ main {
 /**
  * Images
  */
-img {
+ img {
   display: block;
-  margin: 0 auto;
+  margin: 15px auto 0 auto;
   max-width: 100%;
-}
-
-
-
-/**
- * Figures
- */
-figure > img {
-  display: block;
 }
 
 figcaption {
   font-size: $small-font-size;
+  font-style: italic;
+  color: $grey-color-dark;
+  text-align: center;
 }
-
-
 
 /**
  * Lists

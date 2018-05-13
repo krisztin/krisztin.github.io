@@ -14,6 +14,7 @@ What have I learned so far?
 
 From the first day spent in induction where - amongst many other useful things I have learned how not to electrocute myself - to meeting my team, getting settled and getting to know the systems there was definitely a lot of information to digest. Right now I spend my days in a mix of working with my team and honing my coding skills on Treehouse to slowly but surely become more useful.
 
-![my desk]({{ site.url }}/assets/img/hellowellcome.jpg)
+{% include img.html file='hellowellcome.jpg' alt='my desk'
+caption='excuse the mess' -%}
 
 Here's to another 17 months and 3 weeks of learning and growing!
