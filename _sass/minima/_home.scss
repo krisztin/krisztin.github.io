@@ -61,10 +61,13 @@
 
 .project-card {
     border: 4px $brand-color solid;
-    margin: 15px 10px 0px 0px;
+    margin: 10px 5px;
     padding: 5px;
     -ms-flex-preferred-size: 200px;
-    flex-basis: 200px;
+    min-width: 200px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     &:hover {
         background-color: $brand-color;
         color: $text-color-light;
