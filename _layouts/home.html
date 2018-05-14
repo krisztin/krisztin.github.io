@@ -8,30 +8,33 @@ layout: default
 </div>
 <div class="home">
   {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
+  <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
-
-  <!-- {{ content }} -->
 
   <div class="product">
     <h1 class="home-head">&#60; Product &#62;</h1>
-    <p>I am working with the team responsible for <a href="https://wellcome.ac.uk" target="_blank">wellcome.ac.uk</a>. <strong>How is it?</strong></p>
+    <p>I am working with the team responsible for
+      <a href="https://wellcome.ac.uk" target="_blank">wellcome.ac.uk</a>.
+      <strong>How is it?</strong>
+    </p>
     <a class="home-link" href="{{ site.baseurl }}{% link blog/category/work.md %}">Working at Wellcome posts</a>
   </div>
 
   {% include home-projects.html -%}
-
+  
   {% include home-posts.html -%}
 
   <div class="tag-cloud">
     <h1 class="home-head">&#60; Topics &#62;</h1>
     <div class="home-tags">
-   <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/work.md %}">Work</a>
-    <span>Things that happen Monday to Friday 9 to 5.</span><br>
-   <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/learn.md %}">Learn</a>
-      <span>I could tag all posts with this but I won't.</span><br>
-   <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/play.md %}">Play</a>
-    <span>Building stuff for fun.</span>
-  </div>
+      <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/work.md %}">Work</a>
+      <span>Things that happen Monday to Friday 9 to 5.</span>
+      <br>
+      <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/learn.md %}">Learn</a>
+      <span>I could tag all posts with this but I won't.</span>
+      <br>
+      <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/play.md %}">Play</a>
+      <span>Building stuff for fun.</span>
+    </div>
   </div>
 </div>

@@ -2,6 +2,12 @@
 layout: page
 title: Blog
 ---
+<div>
+<h5>Main topics:</h5>
+<a class="tag-link" href="{{ site.baseurl }}{% link blog/category/work.md %}">Work</a>
+<a class="tag-link" href="{{ site.baseurl }}{% link blog/category/learn.md %}">Learn</a>
+<a class="tag-link" href="{{ site.baseurl }}{% link blog/category/play.md %}">Play</a>
+</div>
 
 {%- for post in site.posts -%}
     <article class="blog-listing">
