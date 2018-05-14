@@ -72,6 +72,12 @@ figcaption {
   text-align: center;
 }
 
+// tag fontawesome icon on /tags/ page
+h3 i {
+  font-size: $small-font-size;
+  color: $grey-color-dark;
+}
+
 /**
  * Lists
  */
