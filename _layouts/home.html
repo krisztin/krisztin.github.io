@@ -1,23 +1,21 @@
 ---
 layout: default
 ---
-<div class="header-wrapper">
+<div class="header-wrapper indent">
   <h3 class="header-subtitle">Jekyll site of a</h3>
   <h1 class="header-jumbo">Drupal Developer Apprentice</h1>
   <h3 class="header-subtitle">Yes, well...</h3>
 </div>
 <div class="home">
-  {%- if page.title -%}
-  <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
   <div class="product">
     <h1 class="home-head">&#60; Product &#62;</h1>
+    <div class="indent">
     <p>I am working with the team responsible for
       <a href="https://wellcome.ac.uk" target="_blank">wellcome.ac.uk</a>.
       <strong>How is it?</strong>
     </p>
     <a class="home-link" href="{{ site.baseurl }}{% link blog/category/work.md %}">Working at Wellcome posts</a>
+  </div>
   </div>
 
   {% include home-projects.html -%}
@@ -26,7 +24,7 @@ layout: default
 
   <div class="tag-cloud">
     <h1 class="home-head">&#60; Topics &#62;</h1>
-    <div class="home-tags">
+    <div class="home-tags indent">
       <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/work.md %}">Work</a>
       <h4>Things that happen Monday to Friday 9 to 5.</h4>
       <a class="tag-link" href="{{ site.baseurl }}{% link blog/category/learn.md %}">Learn</a>
