@@ -12,10 +12,6 @@
  * Techs
  */
 
-.tech-list {
-    margin: 0;
-}
-
 .tech-list>li {
     list-style-type: none;
     line-height: $base-line-height * 1.4;
@@ -100,7 +96,7 @@
     list-style: none;
     @extend %clearfix;
     margin-left: 0px;
-    li {
+    article {
         max-width: 50%;
         float: left;
         margin: 0 5px 5px 0;
@@ -116,7 +112,7 @@
 @media screen and (max-width: 700px) {
     .post-list {
         margin-left: 0px;
-        li {
+        article {
             max-width: 100%;
             display: block;
             margin: 0 0 5px 0;
