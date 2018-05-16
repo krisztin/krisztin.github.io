@@ -3,9 +3,10 @@
     <div class="indent">
     <h2>Q1 - This is fun!</h2>
     <p>Posts from the first three months of my apprenticeship. More of an entertainment I suppose than anything you can possibly learn from. I have the sneaking suspicion I will cringe hard once I look back on these in a few months.</p>
-    {%- if site.posts.size > 0 -%}
+    {% for post in site.posts %}
+    {% capture month %}{{post.date | date: "%-m"}}{% endcapture %}
+    {% if month == "3" or month == "4" or month == "5" %}
     <ul class="post-list">
-        {%- for post in site.posts -%}
         <article>
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <h3>
@@ -16,16 +17,17 @@
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
         </article>
-        {%- endfor -%}
     </ul>
-    {%- endif -%}
-    </div>
-    <!-- <h2>Q2 - Now I have a clue</h2>
-    <p>Nope, false alarm. Still clueless.</p>
-    {%- if site.posts.size > 0 -%}
+    {% endif %}
+    {% endfor %}
+    <h2>Q0 - Decision time</h2>
+    <p>Posts from the first three months of my apprenticeship. More of an entertainment I suppose than anything you can possibly learn from. I have the sneaking suspicion I will cringe hard once I look back on these in a few months.</p>
+    {% for post in site.posts %}
+    {% capture month %}{{post.date | date: "%-m"}}{% endcapture %}
+    {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}    
+    {% if year == "2017" or month == "2" or month == "1" %}
     <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
+        <article>
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
             <h3>
                 <a class="post-link" href="{{ post.url | relative_url }}">
@@ -34,8 +36,9 @@
             </h3>
             <span class="post-meta">{{ post.date | date: date_format }}</span>
             {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
-        </li>
-        {%- endfor -%}
+        </article>
     </ul>
-    {%- endif -%} -->
+    {% endif %}
+    {% endfor %}
+    </div>
 </div>
