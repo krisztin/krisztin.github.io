@@ -150,13 +150,13 @@ h1 {
 // form
 label,
 input,
-button,
+send-button,
 textarea {
   display: block;
   width: 100%;
 }
 
-button {
+send-button {
   margin-top: 5px;
   @include border;
   background-color: $brand-color;
@@ -219,12 +219,12 @@ button {
   }
   label,
   input,
-  button,
+  send-button,
   textarea {
     margin: 0px auto;
     width: 100%;
   }
-  button {
+  send-button {
     margin-top: 5px;
   }
 }
