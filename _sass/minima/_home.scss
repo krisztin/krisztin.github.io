@@ -71,9 +71,6 @@
             color: $text-color;
         }
     }
-    >a:hover {
-        text-decoration: none;
-    }
 }
 
 .tag {
@@ -93,12 +90,10 @@
 }
 
 .post-list {
-    list-style: none;
-    @extend %clearfix;
     margin-left: 0px;
+    white-space: nowrap;
+    display: inline-block;
     article {
-        max-width: 50%;
-        float: left;
         margin: 0 5px 5px 0;
         background-color: $grey-color-light;
         padding: 10px;

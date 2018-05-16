@@ -21,7 +21,8 @@
     {% endif %}
     {% endfor %}
     <h2>Q0 - Decision time</h2>
-    <p>Posts from the first three months of my apprenticeship. More of an entertainment I suppose than anything you can possibly learn from. I have the sneaking suspicion I will cringe hard once I look back on these in a few months.</p>
+    <p>The time between deciding to go into development and starting an apprenticeship. Lots of research and figuring out what sort of developer I would want to be when I grow up.
+    </p>
     {% for post in site.posts %}
     {% capture month %}{{post.date | date: "%-m"}}{% endcapture %}
     {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}    
