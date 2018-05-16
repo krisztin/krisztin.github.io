@@ -6,7 +6,10 @@ permalink: /about/
 
 Follow my journey from giving up a more than a decade long career in digital (marketing) to start anew as an Apprentice Developer. Yes, I have quit my nice, cushy, well-paid job to start a new career from the bottom. I call this dedication....my mum calls it insanity.
 
- You can expect a lot of rambling on analytics (I ❤️ numbers) and human-centred designs (I ❤️ people too...the nice ones...and sometimes the not so nice ones too).I shall try and keep you entertained, after all I am a stickler for great UX.
+You can expect a lot of rambling on analytics (I ❤️ numbers) and human-centred designs (I ❤️ people too...the nice ones...and sometimes the not so nice ones too).I shall try and keep you entertained, after all I am a stickler for great UX.
+
+{% include img.html file='teapawty.jpg' alt='kitten teapawty'
+caption='Filming and photographing cats, the career I gave up' -%}
 
 <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
 
