@@ -19,8 +19,7 @@
     padding: 5px;
     background-color: $grey-color-dark;
     color: $text-color-light;
-    font-weight: 800;
-    // &:hover {
+    font-weight: 800; // &:hover {
     //     background-color: $brand-color;
     // }
 }
@@ -56,14 +55,15 @@
 }
 
 .project-card {
+    display: none;
     border: 4px $brand-color solid;
     margin: 10px 5px;
     padding: 5px;
     -ms-flex-preferred-size: 200px;
     min-width: 200px;
     -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     &:hover {
         background-color: $brand-color;
         color: $text-color-light;
@@ -71,6 +71,31 @@
             color: $text-color;
         }
     }
+}
+
+.show {
+    display: inline;
+}
+
+.btn {
+    padding: 5px;
+    margin-top: 5px;
+    line-height: $base-line-height;
+    font-weight: bold;
+    font-size: 1rem;
+    background-color: $grey-color-dark;
+    color: $text-color-light;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    &:hover {
+        text-decoration: underline;
+        background-color: $brand-color;
+    }
+}
+
+.active {
+    background-color: $brand-color;
 }
 
 .tag {
