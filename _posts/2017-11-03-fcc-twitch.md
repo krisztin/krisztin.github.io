@@ -4,6 +4,7 @@ title:  Who's Online? - fCC Challenge
 date:   2017-11-03 11:15:06 +0100
 category: [play]
 tags: [freeCodeCamp, build]
+excerpt: "<p>Another fCC build challenge. This time working with Twitch’s API.</p>"
 ---
 
 Since I have decided to become a Developer I have been studying on freeCodeCamp. It’s an amazing, free online bootcamp with some pretty challenging lessons and challenges.

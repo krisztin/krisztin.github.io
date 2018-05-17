@@ -103,8 +103,8 @@
     line-height: $base-line-height * 1.4;
     font-weight: bold;
     white-space: nowrap;
-    background-color: $grey-color-dark;
-    color: $text-color-light;
+    background-color: $grey-color-light;
+    color: $text-color;
     display: inline;
 }
 
@@ -132,11 +132,9 @@
 @media screen and (max-width: 700px) {
     .post-list {
         margin-left: 0px;
+        display: block;
         article {
             max-width: 100%;
-            display: block;
-            margin: 0 0 5px 0;
-            float: none;
         }
     }
 }

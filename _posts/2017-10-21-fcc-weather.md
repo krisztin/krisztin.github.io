@@ -4,9 +4,10 @@ title:  What's the Weather Like? - fCC Challenge
 date:   2017-10-21 11:15:06 +0100
 category: [play]
 tags: [freeCodeCamp, build]
+excerpt: "<p>Building a single page app using a simple weather API was one of the fCC challenges. Read on for the user story and what gave me a headache.</p>"
 ---
 
-Since I have decided to become a Developer I have been studying on freeCodeCamp. It’s an amazing, free online bootcamp with some pretty challenging lessons and challenges.
+Since I have decided to become a Developer I have been studying on freeCodeCamp. It’s an amazing, free online bootcamp with some pretty challenging lessons and build challenges.
 
 ### Weather API
 
