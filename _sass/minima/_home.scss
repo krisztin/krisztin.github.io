@@ -98,8 +98,19 @@
     background-color: $brand-color;
 }
 
+.project-how-link a {
+    background-color: $grey-color-dark;
+    color: #fff;
+    i {
+        font-weight: 100;
+        color: #fff;
+    }
+    padding: 5px;
+}
+
 .tag {
     padding: 5px;
+    font-size: $small-font-size;
     line-height: $base-line-height * 1.4;
     font-weight: bold;
     white-space: nowrap;
