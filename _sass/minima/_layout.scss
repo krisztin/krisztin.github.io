@@ -7,16 +7,12 @@ h1 {
   font-size: $base-font-size * 1.5;
 }
 
-.indent {
-  margin-left: 15px;
-}
-
 /**
  * Site header
  */
 
 .site-header {
-  border-bottom: 4px solid $brand-color;
+  border-bottom: 5px solid $brand-color;
   min-height: $spacing-unit * 1.865; // Positioning context for the mobile navigation icon
   position: relative;
 }
@@ -107,11 +103,7 @@ h1 {
 }
 
 .header-jumbo {
-  font-size: $base-font-size * 2.8;
-  margin: 0px;
-}
-
-.header-subtitle {
+  font-size: $base-font-size * 4;
   margin: 0px;
 }
 
@@ -128,11 +120,6 @@ h1 {
   padding: $spacing-unit 0;
 }
 
-.footer-heading {
-  @include relative-font-size(1.125);
-  margin-bottom: $spacing-unit / 2.5;
-}
-
 .contact-list,
 .social-media-list {
   list-style: none;
@@ -144,27 +131,6 @@ h1 {
   line-height: 30px;
   a {
     display: inline-block;
-  }
-}
-
-// form
-label,
-input,
-.send-button,
-textarea {
-  display: block;
-  width: 100%;
-}
-
-.send-button {
-  margin-top: 5px;
-  @include border;
-  background-color: $brand-color;
-  color: $text-color-light;
-  font-weight: 700;
-  &:hover {
-    background-color: $grey-color-dark;
-    border: 5px solid $grey-color-dark;
   }
 }
 
@@ -183,26 +149,13 @@ textarea {
   width: calc(35% - (#{$spacing-unit} / 2));
 }
 
-.footer-col-2 {
-  width: calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: calc(45% - (#{$spacing-unit} / 2));
-}
-
 @include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
+  .footer-col-1 {
     width: calc(50% - (#{$spacing-unit} / 2));
-  }
-  .footer-col-3 {
-    width: calc(100% - (#{$spacing-unit} / 2));
   }
 }
 
 @include media-query($on-palm) {
-  .footer-heading,
   .contact-list,
   .social-media-list li,
     {
@@ -216,16 +169,6 @@ textarea {
   .svg-icon {
     width: 40px;
     height: 40px;
-  }
-  label,
-  input,
-  .send-button,
-  textarea {
-    margin: 0px auto;
-    width: 100%;
-  }
-  .send-button {
-    margin-top: 5px;
   }
 }
 

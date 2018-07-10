@@ -160,10 +160,10 @@ blockquote {
 }
 
 
-
+//
 /**
  * Code formatting
- */
+ 
 pre,
 code {
   @include relative-font-size(0.9375);
@@ -186,6 +186,7 @@ pre {
     padding-left: 0;
   }
 }
+//
 
 
 

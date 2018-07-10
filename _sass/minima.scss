@@ -15,6 +15,7 @@ $text-color-light: #fff;
 $text-link-color:  #116471;
 $background-color: #fdfdfd !default;
 $brand-color:      #1EA8BE !default;
+$pop-color: #fc7302;
 
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
@@ -53,6 +54,6 @@ $on-laptop:        800px !default;
 @import
   "minima/base",
   "minima/layout",
-  "minima/syntax-highlighting",
+  // "minima/syntax-highlighting",
   "minima/home"
 ;
