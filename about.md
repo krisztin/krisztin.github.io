@@ -21,8 +21,14 @@ caption='Filming and photographing cats, the career I gave up' -%}
 			<th style="width: 99px;">Year</th>
 		</tr>
 		<tr>
+			<td>Software Developer Apprentice</td>
+			<td style="width: 843px;"><strong>Happy Ltd. - Placement: <a href="https://wellcome.ac.uk" target="_blank">Wellcome</a></strong><br />	
+				# Front-End and back-end (Drupal, PHP) development of wellcome.ac.uk; </td>
+			<td style="width: 99px;">2018 - </td>
+		</tr>
+		<tr>
 			<td>Digital Officer</td>
-			<td style="width: 843px;"><a href="https://themayhwe.org">Mayhew Animal Home</a><br />
+			<td style="width: 843px;"><a href="https://themayhwe.org" target="_blank">Mayhew Animal Home</a><br />
 			# Developing and updating content and functionality for the website (WordPress) and webshop (Shopify) based on user needs, analytics data and stakeholder input;<br />
 			# Plan, execute and measure digital marketing campaigns across all major platforms;<br />
 			# Producing film and photography content;</td>
@@ -30,7 +36,7 @@ caption='Filming and photographing cats, the career I gave up' -%}
 		</tr>
 		<tr>
 			<td>Head of Audience Development</td>
-			<td style="width: 843px;"><a href="http://speceffectmedia.com/">Special Effects Media - YouTube Multi-Channel Network</a><br />
+			<td style="width: 843px;"><a href="http://speceffectmedia.com/" target="_blank">Special Effects Media - YouTube Multi-Channel Network</a><br />
 			# Development of more than 40 channels from major broadcasters to brands and classic YouTubers;<br />
 			# Storyboarding, writing, directing, recording and editing videos. Production based on analytics data;</td>
 			<td style="width: 99px;">2013 - 2015</td>
