@@ -1,47 +1,6 @@
 /**
- * Global
- */
-
-.home-head {
-  margin-top: 50px;
-  font-size: 2rem;
-  color: $brand-color;
-}
-
-.highlight {
-  background: $text-color;
-  color: $text-color-light;
-  padding: 0 5px 5px 5px;
-  text-transform: uppercase;
-}
-
-/**
- * Techs
- */
-
-.tech-list {
-  display: inline-block;
-  padding: 5px;
-  margin: 0 auto;
-}
-
-/**
-   * Product
-   */
-
-.home-link {
-  padding: 10px;
-  line-height: $base-line-height*2;
-  @include border;
-  &:hover {
-    background-color: $brand-color;
-    color: $text-color-light;
-  }
-}
-
-/**
-   * Projects
-   */
+  * Projects
+  */
 
 .flex-container {
   display: -webkit-box;
@@ -56,64 +15,36 @@
 }
 
 .project-card {
+  background: $colour-white;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
   display: none;
-  border: 4px $brand-color solid;
-  margin: 10px 5px;
-  padding: 5px;
+  margin: $spacing-unit/3 $spacing-unit/6;
+  padding: $spacing-unit/2;
   -ms-flex-preferred-size: 200px;
   min-width: 200px;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  &:hover {
-    background-color: $brand-color;
-    color: $text-color-light;
-    >a {
-      color: $text-color;
-    }
+  color: $text-color;
+  h1, h2, h3 {
+    color: $colour-primary;
   }
-}
-
-article.project-card.html.css.js.prototype.uxui.design.drupal.show {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  i {
+    color: $colour-primary;
+  }
+  &:hover {
+    transform: scale(1.02);
+  }
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
 }
 
 .show {
   display: inline;
-}
-
-.btn {
-  padding: 8px;
-  margin-top: 5px;
-  line-height: $base-line-height;
-  font-weight: bold;
-  font-size: 1rem;
-  background-color: $grey-color-dark;
-  color: $text-color-light;
-  display: inline-block;
-  cursor: pointer;
-  border: none;
-  border-radius: 5px;
-  &:hover {
-    text-decoration: underline;
-    background-color: $brand-color;
-  }
-}
-
-.active {
-  background-color: $brand-color;
-}
-
-.project-how-link a {
-  background-color: $grey-color-dark;
-  color: #fff;
-  i {
-    font-weight: 100;
-    color: #fff;
-  }
-  padding: 5px;
 }
 
 .tag {
@@ -122,51 +53,41 @@ article.project-card.html.css.js.prototype.uxui.design.drupal.show {
   line-height: $base-line-height * 1.4;
   font-weight: bold;
   white-space: nowrap;
-  background-color: $grey-color-light;
+  background-color: $colour-grey-light;
   color: $text-color;
   display: inline;
 }
 
-/* posts */
+// /* posts */
 
-.post-list-heading {
-  @include relative-font-size(1.75);
-}
+// .post-list-heading {
+//   @include relative-font-size(1.75);
+// }
 
-.post-list {
-  margin-left: 0px;
-  white-space: nowrap;
-  display: inline-block;
-  article {
-    margin: 0 5px 5px 0;
-    background-color: $grey-color-light;
-    padding: 10px;
-  }
-}
+// .post-list {
+//   margin-left: 0px;
+//   white-space: nowrap;
+//   display: inline-block;
+//   article {
+//     margin: 0 5px 5px 0;
+//     background-color: $colour-grey-light;
+//     padding: 10px;
+//   }
+// }
 
-.post-link {
-  font-size: 1.2rem;
-}
+// .post-link {
+//   font-size: 1.2rem;
+// }
 
-@media screen and (max-width: 700px) {
-  .post-list {
-    margin-left: 0px;
-    display: block;
-    article {
-      max-width: 100%;
-      white-space: normal;
-    }
-  }
-}
+/*
+  * Tag Cloud
+  */
 
-/* tag cloud */
-
-.tag-link {
-  padding: 10px;
-  line-height: $base-line-height*2.5;
-  @include border;
-  &:hover {
-    background-color: $brand-color;
-    color: $text-color-light;
-  }
-}
+// .tag-link {
+//   padding: 10px;
+//   line-height: $base-line-height*2.5;
+//   &:hover {
+//     background-color: $colour-primary;
+//     color: $text-color-light;
+//   }
+// }
