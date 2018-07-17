@@ -1,17 +1,28 @@
 ---
 layout: default
 ---
-<div class="header-wrapper">
-  <h1 class="header-jumbo highligh">A Developing Developer</h1>
-</div>
-<div class="home">
-  <div class="product">
-    <h2 class="home-head">What am I <span class="highlight"> currently</span> up to?</h2>
-    <h3>Wordpress Theme Development</h3>
-    <li><strong>Started on:</strong> 4th July</li>
-    <li><strong>Progress:</strong> <a href="https://github.com/krisztin/wp-shelter-theme">notes and code so far on Github</a></li>
-  </div>
-  <h2 class="home-head">The story <span class="highlight">so far</span></h2>
-  {% include home-projects.html -%}
 
-</div>
+<article class="full-bgcol-secondary">
+  <div class="wrapper pad-tb-8">
+    <header><h1 class="text-jumbo">What am I currently up to?</h1></header>
+    <h2>Wordpress Theme Development</h2>
+    <p><strong>Started on:</strong> 4th July</p>
+    <a href="https://github.com/krisztin/wp-shelter-theme" class="btn btn-dark-primary" target="_blank"><i class="fab fa-github"></i> notes and code</a>
+  </div>
+</article>
+
+<article class="full-bgcol-primary">
+  <div class="pad-tb-4 wrapper">
+    <h2 class="text-jumbo">&#60; Projects &#62;</h2>
+    {% include home-projects.html -%}
+  </div>
+</article>
+
+<article class="mar-tb-4">
+  <div class="line"></div>
+  <div class="pad-tb-4 wrapper aligncenter">
+    <p class="">Follow my journey from giving up a more than a decade long career in the creative industry to start anew as a Developer. Yes, I have quit my job that included photographing kittens to start a new career from the bottom. </p>
+    <p>I call this dedication....my mum calls it insanity.</p>
+  </div>
+  <div class="line"></div>
+</article>
