@@ -1,22 +1,10 @@
 /**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
-}
-
-
-
-/**
  * Basic styling
  */
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $background-color;
+  background-color: $colour-white;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
        -o-font-feature-settings: "kern" 1;
@@ -33,11 +21,21 @@ body {
           flex-direction: column;
 }
 
-
+main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+}
 
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * Typography
  */
+
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
@@ -45,31 +43,12 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 4;
 }
 
-
-
-/**
- * `main` element
- */
-main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight*2;
 }
 
-
-
-/**
- * Images
- */
- img {
-  display: block;
-  margin: 15px auto 0 auto;
-  max-width: 100%;
-}
-
-figcaption {
-  font-size: $small-font-size;
-  font-style: italic;
-  color: $grey-color-dark;
-  text-align: center;
+.text-jumbo {
+  font-size: $base-font-size * 4;
 }
 
 // tag fontawesome icon on /tags/ page
@@ -77,88 +56,157 @@ h4 i {
   font-size: $small-font-size;
 }
 
-.far,
-.fas,
-.fab {
-  color: $text-color;
-}
-
 /**
- * Lists
+ * Buttons
  */
-ul, ol {
-  margin-left: $spacing-unit;
+ button.btn.btn-light {
+  margin: $spacing-unit/4;
+  margin-right: $spacing-unit/4;
 }
 
-li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
+button {
+  user-select: none;
+  cursor: pointer;
+  border:none;
+}
+
+.btn {
+  display: inline-block;
+  border-radius: $border-radius;
+  font-size: $base-font-size*1.2;
+  letter-spacing: .1em;
+  padding: $base-font-size;
+  min-width: $base-font-size*4;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+}
+
+.btn-light {
+  background: $colour-white;
+  color: $colour-primary;
+}
+
+.btn-light.active {
+  background: $colour-pop;
+  
+}
+
+.btn-light:hover,
+.btn-light:active {
+  color: $text-color-light;
+}
+
+.btn-light-secondary {
+  border: $colour-white 2px solid;
+  color: $text-color-light;
+  padding: 14px;
+}
+
+.btn-light:active,
+.btn-light-secondary:active,
+.btn-light-text:active {
+  background: $colour-secondary;
+}
+
+.btn-light-text {
+  color: $text-color-light;
+  padding: 14px;
+}
+
+.btn-light:hover,
+.btn-light-secondary:hover,
+.btn-light-text:hover,
+.btn-dark-primary:hover,
+.btn-dark-secondary:hover,
+.btn-dark-text:hover {
+  background: $colour-primary-dark;
+}
+
+/* The dark side...of buttons*/
+.btn-dark-primary {
+  background: $colour-primary;
+  color: $text-color-light;
+}
+
+.btn-dark-secondary {
+  border: $colour-primary 2px solid;
+  color: $colour-primary;
+  padding: 14px;
+}
+
+.btn-dark-primary:active,
+.btn-dark-secondary:active,
+.btn-dark-text:active {
+  background: $colour-secondary;
+}
+
+.btn-dark-text {
+  color: $colour-primary;
+  padding: 14px;
+}
+
+.btn-dark-secondary:hover,
+.btn-dark-text:hover {
+  color: $text-color-light;
 }
 
 
+// /**
+//  * Images
+//  */
+//  img {
+//   display: block;
+//   margin: 15px auto 0 auto;
+//   max-width: 100%;
+// }
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: $base-font-weight*1.6;
-}
+// figcaption {
+//   font-size: $small-font-size;
+//   font-style: italic;
+//   color: $colour-grey-dark;
+//   text-align: center;
+// }
 
 
+// /**
+//  * Lists
+//  */
+// ul, ol {
+//   margin-left: $spacing-unit;
+// }
+
+// li {
+//   > ul,
+//   > ol {
+//     margin-bottom: 0;
+//   }
+// }
 
 /**
  * Links
  */
 
-
 a {
-  color: $text-link-color;
+  color: $colour-primary;
   text-decoration: none;
   font-weight: 600;
 
   &:visited {
-    color: $text-link-color;
+    color: $colour-primary;
   }
 
   &:hover {
-    color: $text-color;
-    text-decoration: underline;
-  }
-
-  .social-media-list &:hover {
+    color: $colour-primary-dark;
     text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
   }
-  img {
-    @include border;
-    &:hover {
-      opacity: 0.8;
-    }
-  }
+  // img {
+  //   &:hover {
+  //     opacity: 0.8;
+  //   }
+  // }
 }
-
-
-/**
- * Blockquotes
- */
-blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
-  padding-left: $spacing-unit / 2;
-  @include relative-font-size(1.125);
-  letter-spacing: -1px;
-  font-style: italic;
-
-  > :last-child {
-    margin-bottom: 0;
-  }
-}
-
 
 //
 /**
@@ -167,7 +215,7 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border: 1px solid $colour-grey-light;
   border-radius: 3px;
   background-color: #eef;
 }
@@ -188,84 +236,21 @@ pre {
 }
 //
 
-
-
 /**
  * Wrapper
  */
+
 .wrapper {
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width: $content-width;
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
+  @include media-query($on-palm) {
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
-  }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/**
- * Icons
- */
-
-.svg-icon {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    fill: $brand-color;
-    padding-right: 5px;
-    &:hover {
-      fill: $text-color;
-    }
-}
-
-.social-media-list {
-  li {
-    padding-top: 5px;
-  }
-}
-
-/**
- * Tables
- */
-table {
-  margin-bottom: $spacing-unit;
-  width: 100%;
-  text-align: $table-text-align;
-  color: lighten($text-color, 18%);
-  border-collapse: collapse;
-  border: 1px solid $grey-color-light;
-  tr {
-    &:nth-child(even) {
-      background-color: lighten($grey-color-light, 6%);
-    }
-  }
-  th, td {
-    padding: ($spacing-unit / 3) ($spacing-unit / 2);
-  }
-  th {
-    background-color: lighten($grey-color-light, 3%);
-    border: 1px solid darken($grey-color-light, 4%);
-    border-bottom-color: darken($grey-color-light, 12%);
-  }
-  td {
-    border: 1px solid $grey-color-light;
   }
 }
