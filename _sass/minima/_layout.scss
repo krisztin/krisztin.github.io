@@ -3,11 +3,13 @@
  */
 
 .mar-tb-2 {
-  margin: $base-font-size*2;
+  margin-top: $base-font-size*2;
+  margin-bottom: $base-font-size*2;
 }
 
 .mar-tb-4 {
-  margin: $base-font-size*4;
+  margin-top: $base-font-size*4;
+  margin-bottom: $base-font-size*4;
 }
 
 .pad-tb-2 {
