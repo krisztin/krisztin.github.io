@@ -254,3 +254,9 @@ pre {
     padding-left: $spacing-unit / 2;
   }
 }
+
+.wrapper-skinny {
+  max-width: $content-width/2;
+  margin-right: auto;
+  margin-left: auto;
+}
