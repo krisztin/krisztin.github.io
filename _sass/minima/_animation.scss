@@ -43,3 +43,54 @@ h1 i {
     opacity: 1;
   }
 }
+
+/*
+  React logo
+*/
+
+.react {
+  // animation: rotate 60s infinite linear;
+  circle {
+    -webkit-animation: pulse 8s infinite;
+            animation: pulse 8s infinite;
+  }
+}
+
+// @keyframes rotate {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+
+@-webkit-keyframes pulse {
+  0%,
+  100% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+
+@keyframes pulse {
+  0%,
+  100% {
+    -webkit-transform-origin: 50%;
+            transform-origin: 50%;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
