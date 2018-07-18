@@ -1,15 +1,30 @@
 <div id="buttons" class="btn-container">
   <button class="btn active btn-light" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn btn-light" onclick="filterSelection('css')"> CSS/SASS</button>
-  <button class="btn btn-light" onclick="filterSelection('design')"> Design</button>
-  <button class="btn btn-light" onclick="filterSelection('drupal')"> Drupal</button>
   <button class="btn btn-light" onclick="filterSelection('html')"> HTML</button>
+  <button class="btn btn-light" onclick="filterSelection('css')"> CSS/SASS</button>
   <button class="btn btn-light" onclick="filterSelection('js')"> JavaScript</button>
+  <button class="btn btn-light" onclick="filterSelection('php')"> PHP</button>
+  <button class="btn btn-light" onclick="filterSelection('wp')"> WordPress</button>
+  <button class="btn btn-light" onclick="filterSelection('drupal')"> Drupal</button>
   <button class="btn btn-light" onclick="filterSelection('uxui')"> UX/UI</button>
 </div>
 <div class="flex-container projects">
-
-  <article class="project-card html css js uxui design">
+  <article class="project-card css js html php wp uxui">
+    <a href="https://github.com/krisztin/wp-shelter-theme" target="_blank">
+      <h2><i class="fab fa-wordpress-simple"></i> WordPress Cat Shelter theme</h2>
+    
+      <p>Practicing WordPress theme development by building a theme. Still very much a work in progress.</p>
+      <div class="tags">
+          <h4 class="tag">HTML</h4>
+          <h4 class="tag">CSS</h4>
+          <h4 class="tag">PHP</h4>
+          <h4 class="tag">JavaScript \ JQuery</h4>
+          <h4 class="tag">WordPress</h4>
+          <h4 class="tag">UX/UI</h4>
+      </div>
+    </a>
+  </article>
+  <article class="project-card html css js uxui">
     <a href="https://codepen.io/krisztiiin/full/wrVWZJ/" target="_blank">
       <h2><i class="fab fa-twitch"></i> Twitch API</h2>
       <p>Working with the Twitch API to build an app showing user statuses along with stream info.</p>
@@ -22,11 +37,10 @@
           <h4 class="tag">CSS</h4>
           <h4 class="tag">JavaScript \ JQuery \ JSON</h4>
           <h4 class="tag">UX/UI</h4>
-          <h4 class="tag">Design</h4>
         </a>
   </div>
   </article>
-  <article class="project-card html css js uxui design">
+  <article class="project-card html css js uxui">
     <a href="https://krisztin.github.io/projects/fcc-weather/" target="_blank">
       <h2><i class="fas fa-snowflake"></i> Weather API</h2>
       <p>Using HTML5 Geolocation and a simple weather database to show the current, local weather.</p>
@@ -39,24 +53,6 @@
           <h4 class="tag">CSS</h4>
           <h4 class="tag">JavaScript \ JQuery \ JSON</h4>
           <h4 class="tag">UX/UI</h4>
-          <h4 class="tag">Design</h4>
-        </div>
-      </a>
-  </article>
-  <article class="project-card html css drupal uxui design">
-    <a href="http://dev-appcharity.pantheonsite.io/" target="_blank">
-      <h2><i class="fab fa-drupal"></i> Mock-Charity Website</h2>
-      <p>Drupal Bootcamp Project site. The brief was for a blog written by web professionals for charities.</p>
-      <!-- <p class="project-how-link">
-        <a href="{{ site.baseurl }}{% link _posts/2018-01-19-bootcamp2.md %}">
-          <i class="fab fa-readme"></i> How was this built?</a>
-        </p> -->
-        <div class="tags">
-          <h4 class="tag">HTML</h4>
-          <h4 class="tag">CSS</h4>
-          <h4 class="tag">Drupal</h4>
-          <h4 class="tag">UX/UI</h4>
-          <h4 class="tag">Design</h4>
         </div>
       </a>
   </article>
@@ -82,17 +78,32 @@
       </div>
     </a>
   </article>
-  <article class="project-card uxui design">
-    <a href="https://invis.io/BWIQXA0H4QV" target="_blank">
+  <article class="project-card uxui">
+    <a href="https://projects.invisionapp.com/share/BWIQXA0H4QV#/screens" target="_blank">
       <h2><i class="far fa-object-group"></i> Mayhew rebrand</h2>
     
-      <p>High-fidelity prototype designed based on site analytics, user research and stakeholder needs.</p>
+      <p>High-fidelity prototypeed based on site analytics, user research and stakeholder needs.</p>
       <div class="tags">
         <h4 class="tag">UX/UI</h4>
-        <h4 class="tag">Design</h4>
       </div>
     </a>
   </article>
+  <article class="project-card html css drupal uxui">
+      <a href="http://dev-appcharity.pantheonsite.io/" target="_blank">
+        <h2><i class="fab fa-drupal"></i> Mock-Charity Website</h2>
+        <p>Drupal Bootcamp Project site. The brief was for a blog written by web professionals for charities.</p>
+        <!-- <p class="project-how-link">
+          <a href="{{ site.baseurl }}{% link _posts/2018-01-19-bootcamp2.md %}">
+            <i class="fab fa-readme"></i> How was this built?</a>
+          </p> -->
+          <div class="tags">
+            <h4 class="tag">HTML</h4>
+            <h4 class="tag">CSS</h4>
+            <h4 class="tag">Drupal</h4>
+            <h4 class="tag">UX/UI</h4>
+          </div>
+        </a>
+    </article>
   </div>
  <footer class="">
   <a href="https://github.com/krisztin/projects" target="_blank" class="btn btn-light-text">
