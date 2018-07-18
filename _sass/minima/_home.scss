@@ -17,7 +17,6 @@
 .project-card {
   background: $colour-white;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
-  -moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
   display: none;
   margin: $spacing-unit/3 $spacing-unit/6;
@@ -35,7 +34,8 @@
     color: $colour-primary;
   }
   &:hover {
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
   }
   a {
     color: $text-color;
@@ -66,7 +66,8 @@
     max-width: 70%;
     right: 0;
     bottom: 10px;
-    transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
     path {
       fill: $colour-primary-dark;
     }
