@@ -58,6 +58,21 @@
   display: inline;
 }
 
+.relativity {
+  svg {
+    position: absolute;
+    z-index: -1;
+    height: 400px;
+    max-width: 70%;
+    right: 0;
+    bottom: 10px;
+    transform: rotate(20deg);
+    path {
+      fill: $colour-primary-dark;
+    }
+  }
+}
+
 // /* posts */
 
 // .post-list-heading {
