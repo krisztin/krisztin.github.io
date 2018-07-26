@@ -1,0 +1,84 @@
+<figure aria-hidden="true" role="presentation" class="browser">
+  <header class="browser-header">
+    <div class="close"></div>
+    <div class="address"></div>
+  </header>
+  <div class="tabs">
+    <div onclick="switchero('html')" class="tab html">
+      HTML
+    </div>
+    <div onclick="switchero('js')" class="tab js">
+      JS
+    </div>
+    <div onclick="switchero('react')" class="tab react">
+      React
+    </div>
+    <div onclick="switchero('php')" class="tab php">
+      PHP
+    </div>
+  </div>
+  <div class="content">
+    <div class="tab-output html">
+{% highlight html %}
+<header>
+  <h1>Hello World!</h1>
+</header>
+{% endhighlight %}
+      </div>
+      <div class="tab-output js">
+{% highlight javascript %}
+const greeting = "Hello World!";
+
+document.body.innerHTML =
+  `<h1>${greeting}</h1>`;
+{% endhighlight %}
+      </div>
+      <div class="tab-output react">
+{% highlight typescript %}
+import Greeting from './Greeting';
+  
+class App extends React.Component {
+  render() {
+    <Greeting greeting="Hello World!"/>
+  }
+}
+{% endhighlight %}
+      </div>
+      <div class="tab-output php">
+{% highlight php %}
+<?php
+  $greeting = "Hello World!";
+  echo '<h1>' . $greeting . '</h1>';
+?>
+{% endhighlight %}
+      </div>
+    </div>
+</figure>
+<script>
+  const browserContainer = document.querySelector('.browser');
+  const browserTabs = browserContainer.querySelectorAll('.tab-output');
+  const browserBtns = browserContainer.querySelectorAll('.tab');
+
+  function switchero(element) {
+    browserTabs.forEach(tab => tab.classList.remove('active'));
+    browserBtns.forEach(btn => btn.classList.remove('active'));
+    elements = browserContainer.querySelectorAll(`.${element}`);
+    elements.forEach(element => element.classList.add('active'));
+  }
+
+  let activeIndex = 0;
+  automaton();
+
+  function automaton() {
+    let i;
+    for (i = 0; i < browserTabs.length; i++) {
+      browserTabs[i].classList.remove('active');
+      browserBtns[i].classList.remove('active');
+    }
+    activeIndex++;
+    if (activeIndex > browserTabs.length) {activeIndex = 1} 
+    browserTabs[activeIndex-1].classList.add('active');
+    browserBtns[activeIndex-1].classList.add('active'); 
+    setTimeout(automaton, 8000);
+  }
+</script>

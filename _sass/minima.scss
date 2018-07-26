@@ -20,9 +20,13 @@ $text-color:      #242a38 !default;
 $text-color-light:#fff !default;
 $text-link-color: $colour-primary;
 
-$colour-grey:       #828282 !default;
+$colour-grey:       #949494 !default;
 $colour-grey-light: lighten($colour-grey, 40%) !default;
 $colour-grey-dark:  darken($colour-grey, 25%) !default;
+$colour-grey-0: #eaeaea;
+$colour-grey-2: #d1d1d1;
+$colour-grey-1: #dddddd;
+$colour-grey-3: #828282;
 
 // Alignment & Spacings
 $spacing-unit:     30px !default;
@@ -63,7 +67,7 @@ $border-radius: 25px !default;
 @import
   "minima/base",
   "minima/layout",
-  // "minima/syntax-highlighting",
+  "minima/syntax-highlighting",
   "minima/home",
   "minima/animation"
 ;
