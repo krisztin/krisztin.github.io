@@ -34,12 +34,12 @@ document.body.innerHTML =
 {% endhighlight %}
       </div>
       <div class="tab-output react">
-{% highlight typescript %}
-import Greeting from './Greeting';
+{% highlight javascript %}
+import React from 'react';
   
-class App extends React.Component {
+class Greeting extends React.Component {
   render() {
-    <Greeting greeting="Hello World!"/>
+    <h1>Hello World!</h1>
   }
 }
 {% endhighlight %}
@@ -79,6 +79,6 @@ class App extends React.Component {
     if (activeIndex > browserTabs.length) {activeIndex = 1} 
     browserTabs[activeIndex-1].classList.add('active');
     browserBtns[activeIndex-1].classList.add('active'); 
-    setTimeout(automaton, 8000);
+    setTimeout(automaton, 4000);
   }
 </script>
