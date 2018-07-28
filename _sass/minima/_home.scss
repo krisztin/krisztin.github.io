@@ -73,7 +73,9 @@
 }
 
 .tech {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   p {
     font-size: $base-font-size * 1.1;
   }
@@ -91,13 +93,16 @@
 .browser {  
   width: 400px;
   height: 300px;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin: 0 70px 70px 0;
   
   background: $text-color-light;
   border-radius: 8px;
-  transform: rotate(-1deg);
-  box-shadow: -27.1px 62.5px 125px -25px rgba(50,50,93,.5), -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
+  -webkit-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  -webkit-box-shadow: -27.1px 62.5px 125px -25px rgba(50,50,93,.5), -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
+          box-shadow: -27.1px 62.5px 125px -25px rgba(50,50,93,.5), -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
 }
 
 .browser-header {
@@ -107,7 +112,8 @@
   
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  box-shadow: 0px 1px 3px 0px $colour-grey-1;
+  -webkit-box-shadow: 0px 1px 3px 0px $colour-grey-1;
+          box-shadow: 0px 1px 3px 0px $colour-grey-1;
   .close {
     height: 8px;
     width: 8px;
@@ -182,12 +188,15 @@
   position: absolute;
   top: 0px;
   left: 15px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
-  transform: translatex(110%);
+  -webkit-transform: translatex(110%);
+          transform: translatex(110%);
 }
 
 .tab-output.active {
-  transform: translatex(0%);
+  -webkit-transform: translatex(0%);
+          transform: translatex(0%);
 }
 
 // /* posts */
