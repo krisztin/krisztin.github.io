@@ -49,6 +49,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-jumbo {
   font-size: $base-font-size * 4;
+  @include media-query($mobile) {
+    font-size: $base-font-size *3 ;
+  }
 }
 
 // tag fontawesome icon on /tags/ page
@@ -169,7 +172,7 @@ button {
   padding-left: $spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-palm) {
+  @include media-query($mobile) {
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
@@ -239,33 +242,33 @@ form {
   }
 }
 
-// /**
-//  * Images
-//  */
-//  img {
-//   display: block;
-//   margin: 15px auto 0 auto;
-//   max-width: 100%;
-// }
+/**
+ * Images
+ */
+ img {
+  display: block;
+  margin: 15px auto 0 auto;
+  max-width: 100%;
+}
 
-// figcaption {
-//   font-size: $small-font-size;
-//   font-style: italic;
-//   color: $colour-grey-dark;
-//   text-align: center;
-// }
+figcaption {
+  font-size: $small-font-size;
+  font-style: italic;
+  color: $colour-grey-dark;
+  text-align: center;
+}
 
 
-// /**
-//  * Lists
-//  */
-// ul, ol {
-//   margin-left: $spacing-unit;
-// }
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
 
-// li {
-//   > ul,
-//   > ol {
-//     margin-bottom: 0;
-//   }
-// }
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
