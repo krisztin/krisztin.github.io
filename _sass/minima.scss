@@ -41,7 +41,7 @@ $spacing-unit:     30px !default;
 $content-width:    1200px !default;
 
 // Media query breakpoints
-$on-palm:          400px !default;
+$mobile:          400px !default;
 $on-laptop:        800px !default;
 
 @mixin media-query($device) {
