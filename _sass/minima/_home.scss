@@ -103,6 +103,9 @@
           transform: rotate(-1deg);
   -webkit-box-shadow: -27.1px 62.5px 125px -25px rgba(50,50,93,.5), -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
           box-shadow: -27.1px 62.5px 125px -25px rgba(50,50,93,.5), -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
+  @include media-query($mobile) {
+    display: none;
+  }
 }
 
 .browser-header {
