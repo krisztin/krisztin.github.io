@@ -49,7 +49,7 @@ permalink: /about/
 // Front-End and back-end (Drupal, PHP) development of wellcome.ac.uk;
 </div>
 <div class="mar-tb-2">
-	<h4>Digital Officer | <a href="https://themayhwe.org" target="_blank" rel="noopener">Mayhew Animal Home</a> | 2015 - 2017</h4>
+	<h4>Website Officer | <a href="https://themayhwe.org" target="_blank" rel="noopener">Mayhew Animal Home</a> | 2015 - 2017</h4>
 	// Developing and updating content and functionality for the website (WordPress) and webshop (Shopify) based on user needs, analytics data and stakeholder input;<br />
 	// Plan, execute and measure digital marketing campaigns across all major platforms;<br />
 	// Producing film and photography content;
