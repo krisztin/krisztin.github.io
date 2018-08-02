@@ -4,7 +4,9 @@ title: About me
 permalink: /about/
 ---
 <div class="wrapper">
-<p>Interested in science and technology; avid cyclist, hiker and rower... Never seen Star Wars.</p>
+<p>On the rare occasions when I am not sitting in front of my computer going on yet another Wikipedia binge or trying to build a utopia in Democracy 3 I venture outside either to cycle or to hike around the UK with the husband.</p>
+	{% include img.html file='bacsi.jpg' alt='coloured black and white photo'
+caption="Oh and I also colour. With Photoshop because it's easier to stay in the lines there." -%}
 </div>
 <div class="mar-tb-2 wrapper">
 	<h2><i class="fas fa-graduation-cap"></i> Certificates and Courses</h2>
