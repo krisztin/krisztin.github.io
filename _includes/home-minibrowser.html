@@ -1,39 +1,40 @@
-<figure aria-hidden="true" role="presentation" class="browser">
-  <header class="browser-header">
-    <div class="close"></div>
-    <div class="address"></div>
-  </header>
-  <div class="tabs">
-    <div onclick="switchero('html')" class="tab html">
-      HTML
+<div class="browser-wrapper">
+  <figure aria-hidden="true" role="presentation" class="browser">
+    <header class="browser-header">
+      <div class="close"></div>
+      <div class="address"></div>
+    </header>
+    <div class="tabs">
+      <div onclick="switchero('html')" data-lang="html" class="tab">
+        HTML
+      </div>
+      <div onclick="switchero('js')" data-lang="js" class="tab">
+        JS
+      </div>
+      <div onclick="switchero('react')" data-lang="react" class="tab">
+        React
+      </div>
+      <div onclick="switchero('php')" data-lang="php" class="tab">
+        PHP
+      </div>
     </div>
-    <div onclick="switchero('js')" class="tab js">
-      JS
-    </div>
-    <div onclick="switchero('react')" class="tab react">
-      React
-    </div>
-    <div onclick="switchero('php')" class="tab php">
-      PHP
-    </div>
-  </div>
-  <div class="content">
-    <div class="tab-output html">
+    <div class="content">
+      <div class="tab-output" data-lang="html">
 {% highlight html %}
 <header>
   <h1>Hello World!</h1>
 </header>
 {% endhighlight %}
       </div>
-      <div class="tab-output js">
+      <div class="tab-output" data-lang="js">
 {% highlight javascript %}
 const greeting = "Hello World!";
 
 document.body.innerHTML =
   `<h1>${greeting}</h1>`;
 {% endhighlight %}
-      </div>
-      <div class="tab-output react">
+        </div>
+        <div class="tab-output" data-lang="react">
 {% highlight javascript %}
 import React from 'react';
   
@@ -43,30 +44,45 @@ class Greeting extends React.Component {
   }
 }
 {% endhighlight %}
-      </div>
-      <div class="tab-output php">
+        </div>
+        <div class="tab-output" data-lang="php">
 {% highlight php %}
 <?php
   $greeting = "Hello World!";
   echo '<h1>' . $greeting . '</h1>';
 ?>
 {% endhighlight %}
+        </div>
       </div>
-    </div>
-</figure>
+  </figure>
+  <div class="browser-tray">
+    <button class="browser-icon">
+      <i class="fab fa-chrome"></i>
+      <div class="tooltip-top">Open browser</div>
+    </button>
+  </div>
+</div>
+
 <script>
-  const browserContainer = document.querySelector('.browser');
-  const browserTabs = browserContainer.querySelectorAll('.tab-output');
-  const browserBtns = browserContainer.querySelectorAll('.tab');
+  const browserContainer = document.querySelector('.browser-wrapper');
+  const browser = browserContainer.querySelector('.browser');
+  const browserTabs = browser.querySelectorAll('.tab-output');
+  const browserBtns = browser.querySelectorAll('.tab');
 
   function switchero(element) {
+    elements = browser.querySelectorAll(`div[data-lang=${element}]`);
+
     browserTabs.forEach(tab => tab.classList.remove('active'));
     browserBtns.forEach(btn => btn.classList.remove('active'));
-    elements = browserContainer.querySelectorAll(`.${element}`);
     elements.forEach(element => element.classList.add('active'));
+    
+    // stopping the automaton slideshow through content
+    clearInterval(browserInterval);
+    browserInterval = null;
   }
 
   let activeIndex = 0;
+  let browserInterval = 0;
   automaton();
 
   function automaton() {
@@ -78,7 +94,30 @@ class Greeting extends React.Component {
     activeIndex++;
     if (activeIndex > browserTabs.length) {activeIndex = 1} 
     browserTabs[activeIndex-1].classList.add('active');
-    browserBtns[activeIndex-1].classList.add('active'); 
-    setTimeout(automaton, 4000);
+    browserBtns[activeIndex-1].classList.add('active');
+
+    browserInterval = setTimeout(automaton, 4000);
   }
+
+// Browser 'close' functionality
+  const browserClose = browser.querySelector('.close');
+  const browserIcon = browserContainer.querySelector('.browser-icon');
+
+  function closeBrowser() {
+    browser.classList.add('closed');
+    browser.addEventListener('transitionend', function() {
+      browserIcon.style.display = "inline";
+    });
+  }
+
+  function openBrowser() {
+    browserIcon.style.display = "none";
+    browser.classList.remove('closed');
+    browser.addEventListener('transitionend', function() {
+      browserIcon.style.display = "none";
+    });
+  }
+
+  browserClose.addEventListener('click', closeBrowser);
+  browserIcon.addEventListener('click', openBrowser);
 </script>

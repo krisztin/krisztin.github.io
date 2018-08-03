@@ -91,7 +91,7 @@
 */
 
 .browser {  
-  width: 400px;
+  width: 450px;
   height: 300px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
@@ -99,8 +99,13 @@
   
   background: $text-color-light;
   border-radius: 8px;
-  -webkit-transform: rotate(-1deg);
-          transform: rotate(-1deg);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scale(1) rotate(-1deg);
+  transform: scale(1) rotate(-1deg);
+  opacity: 1;
   -webkit-box-shadow: -27.1px 62.5px 125px -25px rgba(50,50,93,.5), -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
           box-shadow: -27.1px 62.5px 125px -25px rgba(50,50,93,.5), -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
   @include media-query($mobile) {
@@ -118,14 +123,28 @@
   -webkit-box-shadow: 0px 1px 3px 0px $colour-grey-1;
           box-shadow: 0px 1px 3px 0px $colour-grey-1;
   .close {
-    height: 8px;
-    width: 8px;
+    height: 14px;
+    width: 14px;
     border-radius: 50px;
     background: $colour-primary-light;
+    cursor: pointer;
     
     position: absolute;
     top: 10px;
     right: 10px;
+    &:hover {
+      background: $colour-primary-dark;
+    }
+    &:active {
+      background: $colour-secondary;
+    }
+    &:before {
+      content: "x";
+      position: absolute;
+      top: -6px;
+      left: 3px;
+      color: $colour-primary;
+    }
   }
 }
 
@@ -146,7 +165,7 @@
   text-align: center;
 }
 
-.tab{
+.tab {
   display: inline-block;
   font-size: $small-font-size * 0.7;
   letter-spacing: .1em;
@@ -171,7 +190,76 @@
 .tab.active {
   background: $colour-pop;
   color: $colour-primary;
+}
+
+.browser-wrapper {
+  position: relative;
+  width: 500px;
+  height: 350px;
+}
+
+.browser-tray {
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  left: 25px;
+}
+
+.browser-icon {
+  border: none;
+  border-radius: 50px;
+  background: $colour-primary;
+  height: 50px;
+  width: 50px;
+  display: none;
+  i {
+  color: $colour-primary-light;
+  font-size: 2.5em;
+  position: absolute;
+  top: 8px;
+  left: 9px;
   }
+  &:hover {
+    background: $colour-primary-dark;
+  }
+}
+
+.browser-icon:hover .tooltip-top {
+  visibility: visible;
+}
+
+.tooltip-top {
+  visibility: hidden;
+  color: #fff;
+  background-color: $colour-primary-dark;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  top: -35px;
+  left: -23px;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    left: 40%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: $colour-primary;
+    border-bottom: 0;
+  }
+}
+
+/* Animations */
+
+.closed {
+  -webkit-transform: scale(0) rotate(-1deg);
+          transform: scale(0) rotate(-1deg);
+  -webkit-transform-origin: 10% 75%;
+          transform-origin: 10% 75%;
+}
 
 /* Content clicky */
 
