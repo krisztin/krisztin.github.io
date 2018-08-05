@@ -1,17 +1,17 @@
 <div class="pad-tb-4 wrapper">
     <h2 class="text-jumbo">&#60; Projects &#62;</h2>
-  <div id="buttons" class="btn-container">
-    <button class="btn active btn-light" onclick="filterSelection('all')"> Show all</button>
-    <button class="btn btn-light" onclick="filterSelection('html')"> HTML5</button>
-    <button class="btn btn-light" onclick="filterSelection('css')"> CSS3/Sass</button>
-    <button class="btn btn-light" onclick="filterSelection('js')"> JavaScript</button>
-    <button class="btn btn-light" onclick="filterSelection('php')"> PHP</button>
-    <button class="btn btn-light" onclick="filterSelection('wp')"> WordPress</button>
-    <button class="btn btn-light" onclick="filterSelection('drupal')"> Drupal</button>
-    <button class="btn btn-light" onclick="filterSelection('uxui')"> UX/UI</button>
+  <div id="projectButtons" class="btn-container">
+    <button class="btn active btn-light" onclick="filterProjects('all')"> Show all</button>
+    <button class="btn btn-light" onclick="filterProjects('html')"> HTML5</button>
+    <button class="btn btn-light" onclick="filterProjects('css')"> CSS3/Sass</button>
+    <button class="btn btn-light" onclick="filterProjects('js')"> JavaScript</button>
+    <button class="btn btn-light" onclick="filterProjects('php')"> PHP</button>
+    <button class="btn btn-light" onclick="filterProjects('wp')"> WordPress</button>
+    <button class="btn btn-light" onclick="filterProjects('drupal')"> Drupal</button>
+    <button class="btn btn-light" onclick="filterProjects('uxui')"> UX/UI</button>
   </div>
   <div class="flex-container projects">
-    <article class="project-card html css js uxui">
+    <article class="project-card" data-tech="html css js uxui">
       <a href="https://codepen.io/krisztiiin/full/wrVWZJ/" target="_blank">
         <h2>
           <i class="fab fa-twitch"></i> Twitch API</h2>
@@ -24,7 +24,7 @@
       </a>
       </div>
     </article>
-    <article class="project-card html css js uxui">
+    <article class="project-card" data-tech="html css js uxui">
       <a href="https://krisztin.github.io/projects/fcc-weather/" target="_blank">
         <h2>
           <i class="fas fa-snowflake"></i> Weather API</h2>
@@ -37,7 +37,7 @@
         </div>
       </a>
     </article>
-    <article class="project-card css js html php wp uxui">
+    <article class="project-card" data-tech="css js html php wp uxui">
       <a href="https://github.com/krisztin/wp-shelter-theme" target="_blank">
         <h2>
           <i class="fab fa-wordpress-simple"></i> WordPress Cat Shelter theme</h2>
@@ -53,7 +53,7 @@
         </div>
       </a>
     </article>
-    <article class="project-card uxui css html js">
+    <article class="project-card" data-tech="uxui css html js">
       <a href="https://codepen.io/krisztiiin/full/boByVw/" target="_blank">
         <h2>
           <i class="far fa-comment-dots"></i> Random Quote Generator</h2>
@@ -67,7 +67,7 @@
         </div>
       </a>
     </article>
-    <article class="project-card html css ux/ui js">
+    <article class="project-card" data-tech="html css ux/ui js">
       <a href="https://codepen.io/krisztiiin/pen/jzvNJK" target="_blank">
         <h2>
           <i class="fab fa-drupal"></i> Euromillions Guessing Game</h2>
@@ -80,7 +80,7 @@
         </div>
       </a>
     </article>
-    <article class="project-card uxui">
+    <article class="project-card" data-tech="uxui">
       <a href="https://projects.invisionapp.com/share/BWIQXA0H4QV#/screens" target="_blank">
         <h2>
           <i class="far fa-object-group"></i> Mayhew rebrand</h2>
@@ -91,7 +91,7 @@
         </div>
       </a>
     </article>
-    <article class="project-card uxui css html js">
+    <article class="project-card" data-tech="uxui css html js">
       <a href="https://codepen.io/krisztiiin/full/XeQpjG/" target="_blank">
         <h2>
           <i class="fab fa-wikipedia-w"></i> WikiViewer</h2>
@@ -105,7 +105,7 @@
         </div>
       </a>
     </article>
-    <article class="project-card uxui css html js">
+    <article class="project-card" data-tech="uxui css html js">
       <a href="https://codepen.io/krisztiiin/full/bYdrQe/" target="_blank">
         <h2>
           <i class="far fa-calendar-alt"></i> How long?</h2>
@@ -120,7 +120,7 @@
         </div>
       </a>
     </article>
-    <article class="project-card html css php drupal">
+    <article class="project-card" data-tech="html css php drupal">
       <a href="https://wellcome.ac.uk/" target="_blank">
         <h2>
           <i class="fab fa-drupal"></i> Wellcome Trust</h2>
@@ -133,7 +133,7 @@
         </div>
       </a>
     </article>
-    <article class="project-card html css drupal uxui">
+    <article class="project-card" data-tech="html css drupal uxui">
       <a href="http://dev-appcharity.pantheonsite.io/" target="_blank">
         <h2>
           <i class="fab fa-drupal"></i> Mock-Charity Website</h2>
@@ -156,48 +156,25 @@
 
 
 <script>
-  filterSelection("all")
+const projectCards = Array.from(document.querySelectorAll('.project-card'));
+const projectButtonsContainer = document.getElementById('projectButtons');
+const projectButtons = projectButtonsContainer.querySelectorAll('.btn');
 
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("project-card");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-  }
+filterProjects('all');
 
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {
-        element.className += " " + arr2[i];
-      }
-    }
+function filterProjects(language) {
+  if (language === "all") {
+    projectCards.forEach(card => card.classList.add('show'));
+  } else {
+    projectCards.forEach(card => card.classList.remove('show'));
+    let matches = projectCards
+                    .filter(card => card.dataset.tech.includes(language));
+    matches.forEach(match => match.classList.add('show'));
   }
+}
 
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-
-  var buttons = document.getElementById("buttons");
-  var btns = buttons.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function () {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
+projectButtons.forEach(button => button.addEventListener('click', function() {
+  projectButtons.forEach(button => button.classList.remove('active'));
+  this.classList.add('active');
+}));
 </script>
