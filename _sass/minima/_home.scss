@@ -16,8 +16,8 @@
 
 .project-card {
   background: $colour-white;
-  -webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   display: none;
   margin: $spacing-unit/3 $spacing-unit/6;
   padding: $spacing-unit/2;
@@ -27,15 +27,20 @@
   -ms-flex: 1;
   flex: 1;
   color: $text-color;
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     color: $colour-primary;
   }
   i {
     color: $colour-primary;
+  } // Euromillions dice is broken unless it's bold
+  .fa-dice {
+    font-weight: bold;
   }
   &:hover {
     -webkit-transform: scale(1.02);
-            transform: scale(1.02);
+    transform: scale(1.02);
   }
   a {
     color: $text-color;
@@ -67,15 +72,15 @@
     right: 0px;
     bottom: -10px;
     path {
-    fill: $colour-primary;
+      fill: $colour-primary;
     }
   }
 }
 
 .tech {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   p {
     font-size: $base-font-size * 1.1;
   }
@@ -85,18 +90,16 @@
   }
 }
 
-
 /* 
  * Mini Browser
 */
 
-.browser {  
+.browser {
   width: 450px;
   height: 300px;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   margin: 0 70px 70px 0;
-  
   background: $text-color-light;
   border-radius: 8px;
   -webkit-transition: -webkit-transform 0.3s;
@@ -106,10 +109,10 @@
   -webkit-transform: scale(1) rotate(-1deg);
   transform: scale(1) rotate(-1deg);
   opacity: 1;
-  -webkit-box-shadow: -27.1px 62.5px 125px -25px rgba(50,50,93,.5), -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
-          box-shadow: -27.1px 62.5px 125px -25px rgba(50,50,93,.5), -16.2px 37.5px 75px -37.5px rgba(0,0,0,.6);
-  @include media-query($mobile) {
-    display: none;
+  -webkit-box-shadow: -27.1px 62.5px 125px -25px rgba(50, 50, 93, .5), -16.2px 37.5px 75px -37.5px rgba(0, 0, 0, .6);
+  box-shadow: -27.1px 62.5px 125px -25px rgba(50, 50, 93, .5), -16.2px 37.5px 75px -37.5px rgba(0, 0, 0, .6);
+  @media screen and (max-width: 590px) {
+    margin: 70px 0;
   }
 }
 
@@ -117,18 +120,16 @@
   background: $colour-grey-2;
   height: 10%;
   position: relative;
-  
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   -webkit-box-shadow: 0px 1px 3px 0px $colour-grey-1;
-          box-shadow: 0px 1px 3px 0px $colour-grey-1;
+  box-shadow: 0px 1px 3px 0px $colour-grey-1;
   .close {
     height: 14px;
     width: 14px;
     border-radius: 50px;
     background: $colour-primary-light;
     cursor: pointer;
-    
     position: absolute;
     top: 10px;
     right: 10px;
@@ -153,11 +154,9 @@
   height: 8px;
   border-radius: 3px;
   padding: 2px;
-  
   position: absolute;
   top: 9px;
   left: 35px;
-
   background: $colour-grey-0;
 }
 
@@ -181,12 +180,13 @@
   background: $colour-primary-light;
   color: #fff;
   &:hover {
-  background: $colour-primary;
+    background: $colour-primary;
   }
   &:active {
-  background: $colour-secondary;
+    background: $colour-secondary;
   }
 }
+
 .tab.active {
   background: $colour-pop;
   color: $colour-primary;
@@ -194,8 +194,9 @@
 
 .browser-wrapper {
   position: relative;
-  width: 500px;
-  height: 350px;
+  @media screen and (max-width: 520px) {
+    display: none;
+  }
 }
 
 .browser-tray {
@@ -214,11 +215,11 @@
   width: 50px;
   display: none;
   i {
-  color: $colour-primary-light;
-  font-size: 2.5em;
-  position: absolute;
-  top: 8px;
-  left: 9px;
+    color: $colour-primary-light;
+    font-size: 2.5em;
+    position: absolute;
+    top: 8px;
+    left: 9px;
   }
   &:hover {
     background: $colour-primary-dark;
@@ -256,9 +257,9 @@
 
 .closed {
   -webkit-transform: scale(0) rotate(-1deg);
-          transform: scale(0) rotate(-1deg);
+  transform: scale(0) rotate(-1deg);
   -webkit-transform-origin: 10% 75%;
-          transform-origin: 10% 75%;
+  transform-origin: 10% 75%;
 }
 
 /* Content clicky */
@@ -282,20 +283,18 @@
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: translatex(110%);
-          transform: translatex(110%);
+  transform: translatex(110%);
 }
 
 .tab-output.active {
   -webkit-transform: translatex(0%);
-          transform: translatex(0%);
+  transform: translatex(0%);
 }
 
 // /* posts */
-
 // .post-list-heading {
 //   @include relative-font-size(1.75);
 // }
-
 // .post-list {
 //   margin-left: 0px;
 //   white-space: nowrap;
@@ -306,11 +305,9 @@
 //     padding: 10px;
 //   }
 // }
-
 // .post-link {
 //   font-size: 1.2rem;
 // }
-
 /*
   * Tag Cloud
   */
