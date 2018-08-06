@@ -82,6 +82,7 @@ button {
   font-size: $base-font-size*1.2;
   letter-spacing: .1em;
   padding: $base-font-size;
+  margin: $base-font-size 0;
   min-width: $base-font-size*4;
   text-decoration: none;
   text-transform: uppercase;
@@ -191,11 +192,9 @@ button {
   color: $colour-primary;
   text-decoration: none;
   font-weight: 600;
-
   &:visited {
     color: $colour-primary;
   }
-
   &:hover {
     color: $colour-primary-dark;
     text-decoration: none;
