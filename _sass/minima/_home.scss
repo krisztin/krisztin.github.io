@@ -151,14 +151,17 @@
 }
 
 .address {
+  font-size: $small-font-size*0.8;
+  color: $colour-grey-3;
   width: 80%;
-  height: 8px;
+  height: 12px;
   border-radius: 3px;
   padding: 2px;
   position: absolute;
   top: 9px;
   left: 35px;
   background: $colour-grey-0;
+  border: none;
 }
 
 .tabs {
