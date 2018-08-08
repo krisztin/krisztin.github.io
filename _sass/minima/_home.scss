@@ -6,6 +6,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -16,14 +18,12 @@
 }
 
 .project-card {
+  margin: $spacing-unit/3 $spacing-unit/6;
   background: $colour-white;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
-  display: none;
-  margin: $spacing-unit/3 $spacing-unit/6;
-  padding: $spacing-unit/2;
-  -ms-flex-preferred-size: 200px;
-  min-width: 200px;
+  -ms-flex-preferred-size: 400px;
+  min-width: 400px;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -40,12 +40,66 @@
     font-weight: bold;
   }
   &:hover {
-    -webkit-transform: scale(1.02);
-    transform: scale(1.02);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+    .project-description {
+      /*account for padding*/
+      -webkit-transform: translatey($spacing-unit/4);
+      transform: translatey($spacing-unit/4);
+      opacity: 1;
+    }
+    img {
+      opacity: 1;
+    }
   }
   a {
     color: $text-color;
     text-decoration: none;
+  }
+  img {
+    width: 100%;
+    opacity: 0.7;
+  }
+}
+
+.website-card,
+.pad {
+  padding: $spacing-unit/2;
+}
+
+.picturebg {
+  position: relative;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.project-description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-transform: translatey(50%);
+  transform: translatey(50%);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  background: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .project-description {
+    position: static;
+    -webkit-transform: translatey($spacing-unit/4);
+    transform: translatey($spacing-unit/4);
+    opacity: 1;
+  }
+  .project-card {
+    -ms-flex-preferred-size: 100%;
+    min-width: 100%;
   }
 }
 
@@ -62,20 +116,6 @@
   background-color: $colour-grey-2;
   color: $text-color;
   display: inline;
-}
-
-.relativity {
-  svg {
-    position: absolute;
-    z-index: -1;
-    height: 400px;
-    max-width: 70%;
-    right: 0px;
-    bottom: -10px;
-    path {
-      fill: $colour-primary;
-    }
-  }
 }
 
 .tech {
