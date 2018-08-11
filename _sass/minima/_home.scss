@@ -21,6 +21,7 @@
   margin: $spacing-unit/3 $spacing-unit/6;
   background: $colour-white;
   display: none;
+  overflow: hidden;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   -ms-flex-preferred-size: 400px;
