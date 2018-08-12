@@ -39,3 +39,5 @@ _drafts
 .fuse_hidden*
 .Trash-*
 .nfs*
+
+.eslintrc

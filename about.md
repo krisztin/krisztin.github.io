@@ -48,30 +48,34 @@ caption="Oh and I also colour. With Photoshop because it's easier to stay in the
 
 <div class="mar-tb-2">
 <h4>Software Developer Apprentice | Happy Ltd. - Placement: <a href="https://wellcome.ac.uk" target="_blank" rel="noopener">Wellcome Trust</a> | 2018</h4>
-// Front and back end (Drupal, PHP) development of wellcome.ac.uk;
+<p>// Front and back end (Drupal, PHP) development of wellcome.ac.uk;</p>
+
+<p>I have taken the initiative to first conduct an accessibility audit then start fixing all issues myself. My largest project was trying to find an accessible CAPTCHA solution for the contact forms.</p>
+
 </div>
 <div class="mar-tb-2">
 	<h4>Website Officer | <a href="https://themayhwe.org" target="_blank" rel="noopener">Mayhew Animal Home</a> | 2015 - 2017</h4>
-	// Developing and updating content and functionality for the website (WordPress) and webshop (Shopify) based on user needs, analytics data and stakeholder input;<br />
+	<p>// Developing and updating content and functionality for the website (WordPress) and webshop (Shopify) based on user needs, analytics data and stakeholder input;<br />
 	// Plan, execute and measure digital marketing campaigns across all major platforms;<br />
-	// Producing film and photography content;
+	// Producing film and photography content;</p>
+
+	<p>Responsible for the development of both the website (Wordpress) and shop (Shopify) I have project managed larger changes and made small adjustments in code myself (e.g. new Shopify cart where you can add a donation value of your choosing to your order).</p>
+
+	<p>During my time here, I have conducted user research with existing and new users, collected feedback from both users and stakeholders within the organisation and lastly, but perhaps most importantly, analysed user behaviour data from Google Analytics and Hotjar. As well as site specific research I have analysed fifty US charities with the most successful online fundraising profiles.</p>
+
+	<p>Based on the above research I have suggested:</p>
+	<li>Adding Stripe as a payment provider (with only Standard PayPal we've had a significant drop-out rate as people did not notice the option to pay with card)</li>
+	<li>New menu system/page hierarchy (lots of important pages were buried in a maze of clicks)</li>
+	<li>Picture/symbol heavy information pages to aid users with little English (an idea picked from our Vet Clinic)</li>
+	<li>Filters for cats and dogs (i.e. age, can live indoors etc.)</li>
+	<li>Donation boxes: widgets that can be placed on various parts of a page with three fixed value (£5, £20, £50) and a custom field</li>
+	<li>How much of £1 goes to our cats and dogs to strengthen donor confidence</li>
+
 </div>
 <div class="mar-tb-2">
 	<h4>Head of Audience Development | <a href="http://speceffectmedia.com/" target="_blank" rel="noopener">Special Effects Media - YouTube Multi-Channel Network</a> | 2013 - 2015</h4>
 	<p>// Development of more than 40 channels from major broadcasters to brands and classic YouTubers;<br />
 	// Storyboarding, writing, directing, recording and editing videos. Production based on analytics data;</p>
-	
-<p>Responsible for the development of both the website (Wordpress) and shop (Shopify) I have project managed larger changes and made small adjustments in code myself (e.g. new Shopify cart where you can add a donation value of your choosing to your order).</p>
-
-<p>During my time here, I have conducted user research with existing and new users, collected feedback from both users and stakeholders within the organisation and lastly, but perhaps most importantly, analysed user behaviour data from Google Analytics and Hotjar. As well as site specific research I have analysed fifty US charities with the most successful online fundraising profiles.</p>
-
-<p>Based on the above research I have suggested:</p>
-<li>Adding Stripe as a payment provider (with only Standard PayPal we've had a significant drop-out rate as people did not notice the option to pay with card)</li>
-<li>New menu system/page hierarchy (lots of important pages were buried in a maze of clicks)</li>
-<li>Picture/symbol heavy information pages to aid users with little English (an idea picked from our Vet Clinic)</li>
-<li>Filters for cats and dogs (i.e. age, can live indoors etc.)</li>
-<li>Donation boxes: widgets that can be placed on various parts of a page with three fixed value (£5, £20, £50) and a custom field</li>
-<li>How much of £1 goes to our cats and dogs to strengthen donor confidence</li>
   
 </div>
 <div class="mar-tb-2">
