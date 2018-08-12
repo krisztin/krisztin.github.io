@@ -1,8 +1,8 @@
 <div class="browser-wrapper">
-  <figure aria-hidden="true" role="presentation" class="browser">
+  <figure aria-hidden="true" role="presentation" tabindex="-1" class="browser">
     <header class="browser-header">
       <div class="close"></div>
-      <input class="address" value="https://www.krisztin.github.io"></input>
+      <input class="address" value="https://www.krisztin.github.io">
     </header>
     <div class="tabs">
       <div onclick="switchero('html')" data-lang="html" class="tab">
@@ -58,7 +58,7 @@ class Greeting extends React.Component {
   <div class="browser-tray">
     <button class="browser-icon">
       <i class="fab fa-chrome"></i>
-      <div class="tooltip-top">Open browser</div>
+      <span class="tooltip-top">Open browser</span>
     </button>
   </div>
 </div>
