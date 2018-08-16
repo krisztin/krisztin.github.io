@@ -83,7 +83,8 @@ button {
   letter-spacing: .1em;
   padding: $base-font-size;
   margin: $base-font-size 0;
-  min-width: $base-font-size*4;
+  margin-right: $base-font-size;
+  min-width: $base-font-size*10;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -97,7 +98,6 @@ button {
 
 .btn-light.active {
   background: $colour-pop;
-  
 }
 
 .btn-light:hover,
@@ -133,7 +133,12 @@ button {
 /* The dark side...of buttons*/
 .btn-dark-primary {
   background: $colour-primary;
-  color: $text-color-light;
+  a {
+    color: #fff;
+    &:visited {
+      color: #fff;
+    }
+  }
 }
 
 .btn-dark-text:hover {
