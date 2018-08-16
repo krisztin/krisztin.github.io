@@ -3,7 +3,7 @@ layout: post
 title:  Do Accessible CAPTCHAs exist?
 date:   2018-03-22 11:15:06 +0100
 tags: [accessibility, user testing, CAPTCHA]
-excerpt: "<p>spoiler alert: the answer is no</p>"
+excerpt: "<p>Spoiler alert: the answer is no</p>"
 ---
 
 ### The challenge

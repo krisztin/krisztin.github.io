@@ -2,6 +2,7 @@
 layout: post
 title:  Switching to Ubuntu [error]
 date:   2018-05-02 11:11:06 +0100
+excerpt: "<p>It has always been in the back of my mind to rid myself of Windows and convert to Linux</p>"
 tags: linux
 ---
 It has always been in the back of my mind to rid myself of Windows and convert to Linux but I grew up with Microsoft's products, I still remember the wonderful Windows 3.5 and used to play a LOT of Pinball smashing the spacebar relentlessly. It's really hard to break up with someone you've stuck with most of your life; not to mention I do like the convenience of a Windows machine and how I know it pretty much inside and out by now. Windows has never let me down...save for the few blue screens of death, a couple of inexplicable deaths and some seriously aggrevating reinstalls...
