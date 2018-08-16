@@ -2,7 +2,7 @@
 layout: post
 title:  Analytics Edge
 date:   2017-08-01 11:15:06 +0100
-tags: [data science]
+tags: [data science, etc]
 ---
 Being a prolific ‘Google Analytics Investigator’ and lover of everything data I was thrilled to find out that the Massachusetts Institute of Technology (MIT) Analytics Edge course is free and open to attend online. The course covers a lot from linear and logistic regression to k-means clustering and integer optimisation whilst teaching you how to use R, a simple but massively powerful language.
 

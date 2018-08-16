@@ -2,7 +2,7 @@
 layout: post
 title:  Fun Fun Function
 date:   2017-12-12 11:15:06 +0100
-tags: [fun]
+tags: [etc.]
 ---
 
 I was looking for a video on something JS related when I’ve stumbled upon [MPJ’s channel](https://www.youtube.com/channel/UCO1cgjhGzsSYb1rsB4bFe4Q). He is a Front End Dev with around a decade of development under his belt who gave up his job at Spotify to make videos on YouTube. A little bit like me just in reverse.
