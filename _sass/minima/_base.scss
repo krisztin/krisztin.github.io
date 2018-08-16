@@ -94,6 +94,10 @@ button {
   }
 }
 
+@media screen and (max-width: 630px) {
+  .btn {min-width: $base-font-size;}
+}
+
 .btn-light {
   background: $colour-white;
   color: $colour-primary;
@@ -136,11 +140,12 @@ button {
 /* The dark side...of buttons*/
 .btn-dark-primary {
   background: $colour-primary;
-  a {
+}
+
+a.btn-dark-primary {
+  color: #fff;
+  &:visited {
     color: #fff;
-    &:visited {
-      color: #fff;
-    }
   }
 }
 
