@@ -62,6 +62,6 @@ console.log(hours, 'hours', mins, 'mins', secondsLeft, 'seconds')
 
 Thanks to my diligent research, cyclist past and a great instructor I’ve passed. I did manage to stall once in the middle of a small T-intersection in traffic but we don’t talk about that, okay?
 
-Afterwards, my instructor told me he was a bit vary that a newbie like me without ever having driven a car could pass. But he was very impressed with my progress and asked for my secret: **“I like to be prepared.”**
+Afterwards, my instructor told me he was a bit weary that a newbie like me without ever having driven a car could pass. But he was very impressed with my progress and asked for my secret: **“I like to be prepared.”**
 
 He was convinced I’d be back next year for my A1...I never went back. I got a Driver’s Licence instead.
