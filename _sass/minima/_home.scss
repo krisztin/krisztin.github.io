@@ -340,32 +340,32 @@
   transform: translatex(0%);
 }
 
-// /* posts */
-// .post-list-heading {
-//   @include relative-font-size(1.75);
-// }
-// .post-list {
-//   margin-left: 0px;
-//   white-space: nowrap;
-//   display: inline-block;
-//   article {
-//     margin: 0 5px 5px 0;
-//     background-color: $colour-grey-light;
-//     padding: 10px;
-//   }
-// }
-// .post-link {
-//   font-size: 1.2rem;
-// }
+/* posts */
+.post-list-heading {
+  @include relative-font-size(1.75);
+}
+.post-list {
+  margin-left: 0px;
+  white-space: nowrap;
+  display: inline-block;
+  article {
+    margin: 0 5px 5px 0;
+    background-color: $colour-grey-light;
+    padding: 10px;
+  }
+}
+.post-link {
+  font-size: 1.2rem;
+}
 /*
   * Tag Cloud
   */
 
-// .tag-link {
-//   padding: 10px;
-//   line-height: $base-line-height*2.5;
-//   &:hover {
-//     background-color: $colour-primary;
-//     color: $text-color-light;
-//   }
-// }
+.tag-link {
+  padding: 10px;
+  line-height: $base-line-height*2.5;
+  &:hover {
+    background-color: $colour-primary;
+    color: $text-color-light;
+  }
+}
