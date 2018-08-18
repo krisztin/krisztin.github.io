@@ -341,9 +341,11 @@
 }
 
 /* posts */
+
 .post-list-heading {
   @include relative-font-size(1.75);
 }
+
 .post-list {
   margin-left: 0px;
   white-space: nowrap;
@@ -354,9 +356,11 @@
     padding: 10px;
   }
 }
+
 .post-link {
   font-size: 1.2rem;
 }
+
 /*
   * Tag Cloud
   */
@@ -367,5 +371,35 @@
   &:hover {
     background-color: $colour-primary;
     color: $text-color-light;
+  }
+}
+
+.react {
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  path {
+    fill: $colour-pop-alt;
+  }
+}
+
+.recat {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  right: 185px;
+  bottom: 185px;
+}
+
+@media screen and (max-width:850px) {
+  .react {
+    height: 200px;
+    width: 200px;
+  }
+  .recat {
+    right: 85px;
+    bottom: 85px;
   }
 }
