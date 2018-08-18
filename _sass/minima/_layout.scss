@@ -62,9 +62,6 @@
 .full-bgcol-primary-light,
 .full-bgcol-secondary {
   color: $text-color-light;
-  a {
-    color: $text-color-light;
-  }
   i {
     color: $text-color-light;
     font-weight: 400;
@@ -115,8 +112,7 @@
     line-height: $base-line-height;
     font-weight: bold;
     text-decoration: none;
-    font-size: $base-font-size*1.5;
- // Gaps between nav items, but not on the last one
+    font-size: $base-font-size*1.5; // Gaps between nav items, but not on the last one
     &:not(:last-child) {
       margin-right: 20px;
     }
@@ -169,7 +165,6 @@
 //     }
 //   }
 // }
-
 /**
  * Page content
  */
@@ -252,6 +247,7 @@
 * Tags page
 */
 
-.tagpage { //article link styling
- margin-left: 1.2rem;
+.tagpage {
+  //article link styling
+  margin-left: 1.2rem;
 }

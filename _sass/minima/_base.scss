@@ -1,56 +1,86 @@
 /**
  * Basic styling
  */
+
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $colour-white;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
   -webkit-font-kerning: normal;
-          font-kerning: normal;
+  font-kerning: normal;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: block;
+  /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 /**
  * Typography
  */
 
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure {
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 4;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $base-font-weight*2;
 }
 
 .text-jumbo {
   font-size: $base-font-size * 4;
   @include media-query($mobile) {
-    font-size: $base-font-size *3 ;
+    font-size: $base-font-size *3;
   }
 }
 
@@ -62,18 +92,19 @@ h4 i {
 /**
  * Buttons
  */
- button.btn.btn-light {
+
+button.btn.btn-light {
   margin: $spacing-unit/4;
   margin-right: $spacing-unit/4;
 }
 
 button {
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   cursor: pointer;
-  border:none;
+  border: none;
 }
 
 .btn {
@@ -95,12 +126,17 @@ button {
 }
 
 @media screen and (max-width: 630px) {
-  .btn {min-width: $base-font-size;}
+  .btn {
+    min-width: $base-font-size;
+  }
 }
 
-.btn-light {
+a.btn-light {
   background: $colour-white;
   color: $colour-primary;
+  i {
+    color: $colour-primary;
+  }
 }
 
 .btn-light.active {
@@ -110,6 +146,9 @@ button {
 .btn-light:hover,
 .btn-light:active {
   color: $text-color-light;
+  i {
+    color: $text-color-light;
+  }
 }
 
 .btn-light-secondary {
@@ -124,9 +163,13 @@ button {
   background: $colour-secondary;
 }
 
-.btn-light-text {
-  color: $colour-secondary;
+a.btn-light-text {
+  color: $text-color-light;
   padding: 14px;
+}
+
+a:visited.btn-light-text {
+  color: $text-color-light;
 }
 
 .btn-light:hover,
@@ -138,6 +181,7 @@ button {
 }
 
 /* The dark side...of buttons*/
+
 .btn-dark-primary {
   background: $colour-primary;
 }
@@ -178,16 +222,15 @@ a.btn-dark-primary {
  * Wrapper
  */
 
- .wrapper {
+.wrapper {
   max-width: $content-width;
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
   padding-left: $spacing-unit;
   @extend %clearfix;
-
   @include media-query($mobile) {
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
@@ -201,7 +244,7 @@ a.btn-dark-primary {
  * Links
  */
 
- a {
+a {
   color: $colour-primary;
   text-decoration: none;
   font-weight: 600;
@@ -211,8 +254,7 @@ a.btn-dark-primary {
   &:hover {
     color: $colour-primary-dark;
     text-decoration: none;
-  }
-  // img {
+  } // img {
   //   &:hover {
   //     opacity: 0.8;
   //   }
@@ -225,11 +267,11 @@ form {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   button {
     width: 200px;
   }
@@ -241,8 +283,8 @@ form {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   input,
   textarea {
@@ -257,7 +299,8 @@ form {
 /**
  * Images
  */
- img {
+
+img {
   display: block;
   margin: 15px auto 0 auto;
   max-width: 100%;
@@ -270,17 +313,18 @@ figcaption {
   text-align: center;
 }
 
-
 /**
  * Lists
  */
-ul, ol {
+
+ul,
+ol {
   margin-left: $spacing-unit;
 }
 
 li {
-  > ul,
-  > ol {
+  >ul,
+  >ol {
     margin-bottom: 0;
   }
 }
