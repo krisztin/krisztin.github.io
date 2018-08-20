@@ -24,8 +24,8 @@
   overflow: hidden;
   -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
-  -ms-flex-preferred-size: 400px;
-  min-width: 400px;
+  -ms-flex-preferred-size: 300px;
+  min-width: 300px;
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -302,8 +302,6 @@
   }
 }
 
-/* Animations */
-
 .closed {
   -webkit-transform: scale(0) rotate(-1deg);
   transform: scale(0) rotate(-1deg);
@@ -311,7 +309,9 @@
   transform-origin: 10% 75%;
 }
 
-/* Content clicky */
+/*
+* Content clicky
+*/
 
 .content {
   position: relative;
@@ -340,39 +340,9 @@
   transform: translatex(0%);
 }
 
-/* posts */
-
-.post-list-heading {
-  @include relative-font-size(1.75);
-}
-
-.post-list {
-  margin-left: 0px;
-  white-space: nowrap;
-  display: inline-block;
-  article {
-    margin: 0 5px 5px 0;
-    background-color: $colour-grey-light;
-    padding: 10px;
-  }
-}
-
-.post-link {
-  font-size: 1.2rem;
-}
-
 /*
-  * Tag Cloud
+  * What am I up to?
   */
-
-.tag-link {
-  padding: 10px;
-  line-height: $base-line-height*2.5;
-  &:hover {
-    background-color: $colour-primary;
-    color: $text-color-light;
-  }
-}
 
 .react {
   height: 400px;
