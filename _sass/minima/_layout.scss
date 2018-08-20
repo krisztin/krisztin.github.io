@@ -187,6 +187,7 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+  font-size: 1.2rem;
 }
 
 .post-tag {
