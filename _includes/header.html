@@ -4,24 +4,29 @@
     <div class="pad-tb-2">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
-      <a class="site-title" rel="author" href="{{ site.url }}">&#60; k &#62;</a>
       <nav class="site-nav">
-        <a class="page-link" href="https://www.linkedin.com/in/nkriszti/" target="_blank" aria-label="linkedin profile" rel="noopener">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a class="page-link" href="https://github.com/krisztin" target="_blank" aria-label="github profile" rel="noopener">
-          <i class="fab fa-github"></i>
-        </a>
-        <a class="page-link" href="https://codepen.io/krisztiiin/" target="_blank" aria-label="codepen profile" rel="noopener">
-          <i class="fab fa-codepen"></i>
-        </a>
+        <a class="site-title" rel="author" href="{{ site.url }}">&#60; k &#62;</a>
+        <div class="site-links">
+          <a class="page-link" href="/about" class="btn-dark-text">About me</a>
+          <a class="page-link" href="/blog" class="btn-dark-text">Blog</a>
+          <div class="social-links">
+            <a class="page-link" href="https://www.linkedin.com/in/nkriszti/" target="_blank" aria-label="linkedin profile" rel="noopener">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="page-link" href="https://github.com/krisztin" target="_blank" aria-label="github profile" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+            <a class="page-link" href="https://codepen.io/krisztiiin/" target="_blank" aria-label="codepen profile" rel="noopener">
+              <i class="fab fa-codepen"></i>
+            </a>
+          </div>
+        </div>
       </nav>
     </div>
     {% if page.layout == 'home' %}
       <div class="pad-tb-2 wrapper-skinny">
         <h1 class="text-jumbo">Hi.<br>I'm a Front End Developer</h1>
         <h1>based in London</h1>
-        <span><a href="/about" class="btn btn-dark-primary">About me</a><a href="/blog" class="btn btn-dark-secondary">Blog</a></span>
       </div>
     {%- endif -%}
   </div>
