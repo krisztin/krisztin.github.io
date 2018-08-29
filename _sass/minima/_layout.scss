@@ -105,10 +105,12 @@
   .page-link {
     font-weight: bold;
     text-decoration: none;
-    font-size: $base-font-size * 1.5;
     margin-left: 20px;
     &:not(:last-child) {
       margin-right: 0;
+    }
+    i {
+      font-size: $base-font-size * 1.5;
     }
   }
   .site-links {
@@ -129,6 +131,7 @@
     .page-link {
       padding-top: 1rem;
       margin-left: 0;
+      font-size: $base-font-size * 1.5;
     }
     .social-links {
       width: 100%;
