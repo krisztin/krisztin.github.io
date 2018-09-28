@@ -5,14 +5,33 @@
     <button class="btn btn-light" onclick="filterProjects('html')"> HTML5</button>
     <button class="btn btn-light" onclick="filterProjects('css')"> CSS3/Sass</button>
     <button class="btn btn-light" onclick="filterProjects('js')"> JavaScript</button>
+    <button class="btn btn-light" onclick="filterProjects('react')"> React</button>
     <button class="btn btn-light" onclick="filterProjects('php')"> PHP</button>
     <button class="btn btn-light" onclick="filterProjects('wp')"> WordPress</button>
     <button class="btn btn-light" onclick="filterProjects('drupal')"> Drupal</button>
     <button class="btn btn-light" onclick="filterProjects('uxui')"> UX/UI</button>
   </div>
   <div class="flex-container">
+    <article class="project-card picturebg" data-tech="html react css js uxui">
+      <a href="https://github.com/krisztin/recat" target="_blank">
+        <header class="pad">
+          <h2><i class="fab fa-react"></i> Recat: a ReactJS app</h2>
+          <div class="tags">
+            <h4 class="tag">HTML</h4>
+            <h4 class="tag">Sass</h4>
+            <h4 class="tag">JavaScript</h4>
+            <h4 class="tag">ReactJS</h4>
+            <h4 class="tag">UX/UI</h4>
+          </div>
+        </header>
+        <img src="../assets/img/project_recat.png" alt="recat react app">
+        <div class="project-description pad">
+          <p>Using Create-React-App for prototyping Recat: a Tinder based cat adoption app.</p>
+        </div>
+      </a>
+    </article>
     <article class="project-card picturebg" data-tech="html css js uxui">
-      <a href="https://codepen.io/krisztiiin/full/wrVWZJ/" target="_blank" rel="noopener">
+      <a href="https://codepen.io/krisztiiin/full/wrVWZJ/" target="_blank">
         <header class="pad">
           <h2><i class="fab fa-twitch"></i> Twitch API</h2>
           <div class="tags">
@@ -22,7 +41,7 @@
             <h4 class="tag">UX/UI</h4>
           </div>
         </header>
-        <img src="../assets/img/project_twitch.jpg" alt="screenshot of twitch app">
+        <img src="../assets/img/project_twitch.jpg" alt="twitch api app">
         <div class="project-description pad">
           <p>Working with the Twitch API to build an app showing user statuses along with stream info. Made for a freeCodeCamp's intermediate front-end challenge.</p>
           <h3>On top of the user stories I have also added:</h3>
@@ -49,7 +68,7 @@
       </a>
     </article>
     <article class="project-card picturebg" data-tech="uxui css html js">
-      <a href="https://codepen.io/krisztiiin/full/boByVw/" target="_blank" rel="noopener">
+      <a href="https://codepen.io/krisztiiin/full/boByVw/" target="_blank">
         <header class="pad">
           <h2><i class="far fa-comment-dots"></i> Random Quote Generator</h2>
           <div class="tags">
@@ -64,7 +83,7 @@
       </a>
     </article>
     <article class="project-card picturebg" data-tech="html css uxui js">
-      <a href="https://codepen.io/krisztiiin/pen/jzvNJK" target="_blank" rel="noopener">
+      <a href="https://codepen.io/krisztiiin/pen/jzvNJK" target="_blank">
         <header class="pad">
           <h2><i class="fas fa-dice"></i> Euromillions Guessing Game</h2>
           <div class="tags">
@@ -86,7 +105,7 @@
                 <h4 class="tag">HTML</h4>
                 <h4 class="tag">Sass</h4>
                 <h4 class="tag">PHP</h4>
-                <h4 class="tag">JavaScript \ JQuery</h4>
+                <h4 class="tag">JavaScript</h4>
                 <h4 class="tag">WordPress</h4>
                 <h4 class="tag">UX/UI</h4>
               </div>
@@ -101,7 +120,7 @@
   </div>
   <div class="flex-container">
     <article class="project-card website-card" data-tech="html css php drupal">
-      <a href="https://wellcome.ac.uk/" target="_blank" rel="noopener">
+      <a href="https://wellcome.ac.uk/" target="_blank">
         <h2><i class="fab fa-drupal"></i> Wellcome Trust</h2>
         <p>As an Apprentice Software Dev I've worked on the front and back-end of Wellcome's website.</p>
         <div class="tags">
@@ -113,7 +132,7 @@
       </a>
     </article>
     <article class="project-card website-card" data-tech="uxui wp">
-      <a href="https://themayhew.org" target="_blank" rel="noopener">
+      <a href="https://themayhew.org" target="_blank">
         <h2><i class="fab fa-wordpress-simple"></i> Mayhew Animal Home</h2>
         <p>Analysing user journeys through traffic data, conducting user research and collecting stakeholder needs. Project managing development.</p>
         <div class="tags">
@@ -127,7 +146,7 @@
     <a href="https://github.com/krisztin" target="_blank" class="btn btn-light-text">
       <i class="fab fa-github"></i> More on Github
     </a>
-    <a class="btn btn-light-text" href="https://codepen.io/krisztiiin/" target="_blank" aria-label="codepen profile" rel="noopener">
+    <a class="btn btn-light-text" href="https://codepen.io/krisztiiin/" target="_blank" aria-label="codepen profile">
       <i class="fab fa-codepen"></i> Snippets on Codepen
     </a>
   </footer>
