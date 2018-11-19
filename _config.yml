@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: kriszti
-email: notspam@kriszt.in
+email: me@kriszt.in
 description: >- # this means to ignore newlines until "baseurl:"
-  Nothankyou.
+  Front-end developer with UX and UI experience
 baseurl: "" # the subpath of your site, e.g. /blog
 url: https://krisztin.github.io # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  krisztin
+github_username: krisztin
 linkedin_username: nkriszti
 permalink: /blog/:title
 
@@ -28,7 +28,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
