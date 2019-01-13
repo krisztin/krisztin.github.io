@@ -254,47 +254,8 @@ a {
   &:hover {
     color: $colour-primary-dark;
     text-decoration: none;
-  } // img {
-  //   &:hover {
-  //     opacity: 0.8;
-  //   }
-  // }
 }
-
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  button {
-    width: 200px;
   }
-  label {
-    font-weight: 600;
-  }
-  .flex-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-  input,
-  textarea {
-    margin: $spacing-unit/2.5;
-    padding: 6px;
-  }
-  textarea {
-    width: 90%;
-  }
-}
 
 /**
  * Images
