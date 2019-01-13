@@ -24,11 +24,11 @@
 /**
  * Backgrounds
  */
-.bgcol-primary {
+.bgcol--primary {
   @include bg-colour-full($colour-primary);
 }
 
-.bgcol-primary {
+.bgcol--primary {
   color: $text-color-light;
 
   i {
