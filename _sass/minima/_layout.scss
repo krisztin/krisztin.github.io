@@ -21,39 +21,14 @@
   padding-top: $base-font-size * 4;
 }
 
-.line {
-  height: $small-font-size;
-  max-width: 200px;
-  background-color: $colour-primary-light;
-  margin: 0 auto;
-}
-
 /**
  * Backgrounds
  */
-.full-bgcol-primary {
+.bgcol-primary {
   @include bg-colour-full($colour-primary);
 }
 
-.full-bgcol-primary-light {
-  @include bg-colour-full($colour-primary-light);
-}
-
-.full-bgcol-secondary {
-  @include bg-colour-full($colour-secondary);
-}
-
-.full-bgcol-pop {
-  @include bg-colour-full($colour-pop);
-}
-
-.full-bgcol-pop-alt {
-  @include bg-colour-full($colour-pop-alt);
-}
-
-.full-bgcol-primary,
-.full-bgcol-primary-light,
-.full-bgcol-secondary {
+.bgcol-primary {
   color: $text-color-light;
 
   i {
