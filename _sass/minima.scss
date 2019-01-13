@@ -2,35 +2,30 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
 
 // Typography
-$base-font-family: 'Roboto', sans-serif !default;
-$base-font-size:   16px !default;
+$base-font-family: 'Roboto',
+sans-serif !default;
+$base-font-size: 16px !default;
 $base-font-weight: 400 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
+$small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 // Colours
-$colour-primary:       #303f9f !default;
-$colour-primary-dark:  #00186f !default;
+$colour-primary: #303f9f !default;
+$colour-primary-dark: #00186f !default;
 $colour-primary-light: #6668d0 !default;
-$colour-secondary:     #ff4081 !default;
-$colour-pop:           #ffeb3b !default;
-$colour-pop-alt:       #18ffff !default;
-$colour-white:         #fdfdfd !default;
+$colour-secondary: #ffeb3b !default;
+$colour-white: #fdfdfd !default;
 
-$text-color:      #242a38 !default;
+$text-color: #242a38 !default;
 $text-color-light:#fff !default;
 $text-link-color: $colour-primary;
 
-$colour-grey:       #949494 !default;
+$colour-grey: #949494 !default;
 $colour-grey-light: lighten($colour-grey, 40%) !default;
-$colour-grey-dark:  darken($colour-grey, 25%) !default;
-$colour-grey-0: #eaeaea;
-$colour-grey-2: #d1d1d1;
-$colour-grey-1: #dddddd;
-$colour-grey-3: #828282;
+$colour-grey-dark: darken($colour-grey, 25%) !default;
 
 // Alignment & Spacings
-$spacing-unit:     30px !default;
+$spacing-unit: 30px !default;
 
 %clearfix:after {
   content: "";
@@ -39,11 +34,11 @@ $spacing-unit:     30px !default;
 }
 
 // Width of the content area
-$content-width:    1200px !default;
+$content-width: 1200px !default;
 
 // Media query breakpoints
-$mobile:          400px !default;
-$on-laptop:        800px !default;
+$mobile: 400px !default;
+$on-laptop: 800px !default;
 
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
@@ -66,7 +61,7 @@ $border-radius: 25px !default;
 
 // Import partials.
 @import "minima/base",
-  "minima/layout",
-  "minima/syntax-highlighting",
+"minima/layout",
+"minima/syntax-highlighting",
 "minima/home"
 ;
