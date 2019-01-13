@@ -65,10 +65,8 @@ $border-radius: 25px !default;
 }
 
 // Import partials.
-@import
-  "minima/base",
+@import "minima/base",
   "minima/layout",
   "minima/syntax-highlighting",
-  "minima/home",
-  "minima/animation"
+"minima/home"
 ;
