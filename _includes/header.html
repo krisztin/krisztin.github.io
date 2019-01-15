@@ -1,7 +1,7 @@
 <header class="full-bgcol-pop">
 
   <div class="wrapper">
-    <div class="pad-tb-2">
+    <div class="pad-tb">
       {%- assign default_paths = site.pages | map: "path" -%}
       {%- assign page_paths = site.header_pages | default: default_paths -%}
       <nav class="site-nav">
@@ -24,9 +24,7 @@
       </nav>
     </div>
     {% if page.layout == 'home' %}
-      <div class="pad-tb-2">
-        <h1 class="text-jumbo">Hi.<br>I'm a Front-End <br> Developer</h1>
-        <p>Based in London</p>
+      <div class="pad-tb">
       </div>
     {%- endif -%}
   </div>

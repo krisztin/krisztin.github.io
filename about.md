@@ -10,10 +10,10 @@ permalink: /about/
 caption="Oh and I also colour. With Photoshop because it's easier to stay in the lines there." -%}
 </div>
 
-<div class="mar-tb-2 wrapper">
+<div class="mar-tb wrapper">
 <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
 
-<div class="mar-tb-2">
+<div class="mar-tb">
 	<h4>Volunteer Developer | <a href="http://coderlist.io" target="_blank" rel="noopener">Coderlist.io</a> | September 2018 -</h4>
 	<p>Looking for a project I could contribute to I have messaged coderlist.io who agreed to take me on and tasked me
 with: conducting a UX review, redesigning their email templates and a social media strategy overview.</p>
@@ -21,7 +21,7 @@ with: conducting a UX review, redesigning their email templates and a social med
 consistently the primary buttons, the step-by-step guide now has a clearer structure etc.)</p>
 </div>
 
-<div class="mar-tb-2">
+<div class="mar-tb">
 <h4>Software Developer Apprentice | Happy Ltd. - Placement: <a href="https://wellcome.ac.uk" target="_blank" rel="noopener">Wellcome Trust</a> | 2018</h4>
 <p>// Front and back end (Drupal, PHP) development of wellcome.ac.uk;</p>
 
@@ -29,7 +29,7 @@ consistently the primary buttons, the step-by-step guide now has a clearer struc
 
 </div>
 
-<div class="mar-tb-2">
+<div class="mar-tb">
 	<h4>Website Officer | <a href="https://themayhew.org" target="_blank" rel="noopener">Mayhew Animal Home</a> | 2015 - 2017</h4>
 	<p>// Developing and updating content and functionality for the website (WordPress) and webshop (Shopify) based on user needs, analytics data and stakeholder input;<br />
 	// Plan, execute and measure digital marketing campaigns across all major platforms;<br />
@@ -48,57 +48,57 @@ consistently the primary buttons, the step-by-step guide now has a clearer struc
     <li>How much of £1 goes to our cats and dogs to strengthen donor confidence</li>
 
 </div>
-<div class="mar-tb-2">
+<div class="mar-tb">
 	<h4>Head of Audience Development | <a href="http://speceffectmedia.com/" target="_blank" rel="noopener">Special Effects Media - YouTube Multi-Channel Network</a> | 2013 - 2015</h4>
 	<p>// Development of more than 40 channels from major broadcasters to brands and classic YouTubers;<br />
 	// Storyboarding, writing, directing, recording and editing videos. Production based on analytics data;</p>
   
 </div>
-<div class="mar-tb-2">
+<div class="mar-tb">
 	<h4>Social Media Consultant | Poleposition International | 2011 - 2013</h4>
 </div>
-<div class="mar-tb-2">
+<div class="mar-tb">
 	<h4>Video Editor and Producer | Freelance | 2006 - 2010</h4>
 </div>
 </div>
 
-<div class="mar-tb-2 wrapper">
+<div class="mar-tb wrapper">
 	<h2><i class="fas fa-graduation-cap"></i> Certificates and Courses</h2>
 
-    <div class="mar-tb-2">
+    <div class="mar-tb">
     	<h4><a href="https://learnredux.com/" target="_blank" rel="noopener">Redux</a> by Wes Bos</h4>
     	<p>Building 'Reduxstagram' — a simple photo app that simplifies the core ideas behind Redux, React Router and React.js.</p>
     </div>
-    <div class="mar-tb-2">
+    <div class="mar-tb">
     	<h4><a href="https://reactforbeginners.com/" target="_blank" rel="noopener">React</a> by Wes Bos</h4>
     	<p>Building a React.js app from start to finish. Working with create-react-app, react Components, JSX, maintaining state, communication between components, real time web socket data with Firebase, React Router 4 and much more.</p>
     </div>
-    <div class="mar-tb-2">
+    <div class="mar-tb">
     	<h4><a href="https://javascript30.com/" target="_blank" rel="noopener">JavaScript30</a> by Wes Bos</h4>
     	<p>Building 30 things with vanilla JS (ES6).</p>
     </div>
-    <div class="mar-tb-2">
+    <div class="mar-tb">
     	<h4>Responsive Web Design on freeCodeCamp</h4>
     	<p>HTML5, CSS, applied visual design, accessibility, responsive design principles, CSS Flexbox and grid.</p>
     </div>
-    <div class="mar-tb-2">
+    <div class="mar-tb">
     	<h4>Pre-Apprenticeship Drupal Bootcamp</h4>
     A three week bootcamp to get familiar with Drupal by <a href="{{ site.baseurl }}{% link _posts/2018-01-12-bootcamp1.md %}">building a blog and a project site</a>.
     </div>
-    <div class="mar-tb-2">
+    <div class="mar-tb">
     	<h4>Google Front End Developer Scholarship</h4>
     	<p>A Udacity nanodegree programm encompassing HTML5, CSS, JavaScript and Jquery.</p>
     </div>
-    <div class="mar-tb-2">
+    <div class="mar-tb">
     	<h4>Advanced Google Analytics, Google Tag Manager, YouTube Audience Growth</h4>
     </div>
-    <div class="mar-tb-2">
+    <div class="mar-tb">
     	<p>I have also taken several courses from HTTP requests to WordPress Theme Development and basic PHP on Treehouse. <a href="https://teamtreehouse.com/krisztin" target="_blank" rel="noopener">Check out my badges on my profile</a> to get a better idea.</p>
     </div>
 
 </div>
 
-<div class="mar-tb-2 wrapper">
+<div class="mar-tb wrapper">
 <h2>So what makes someone give up working with cats and dogs?</h2>
 
     <p>When I moved to the UK in 2015 I was given the opportunity to work as a Website Officer for The Mayhew Animal Home. The position was a mix of digital marketing and web development (management).</p>
