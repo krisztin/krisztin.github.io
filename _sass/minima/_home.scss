@@ -17,8 +17,6 @@
   max-width: 100%;
 }
 
-
-
 /* 
  * Mini Browser
 */
@@ -38,8 +36,10 @@
   -webkit-transform: scale(1) rotate(-1deg);
   transform: scale(1) rotate(-1deg);
   opacity: 1;
-  -webkit-box-shadow: -27.1px 62.5px 125px -25px rgba(50, 50, 93, .5), -16.2px 37.5px 75px -37.5px rgba(0, 0, 0, .6);
-  box-shadow: -27.1px 62.5px 125px -25px rgba(50, 50, 93, .5), -16.2px 37.5px 75px -37.5px rgba(0, 0, 0, .6);
+  -webkit-box-shadow: -27.1px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
+    -16.2px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
+  box-shadow: -27.1px 62.5px 125px -25px rgba(50, 50, 93, 0.5),
+    -16.2px 37.5px 75px -37.5px rgba(0, 0, 0, 0.6);
 
   @media screen and (max-width: 590px) {
     margin: 70px 0;
@@ -47,26 +47,25 @@
 }
 
 .browser-header {
-  background: $colour-grey-2;
   height: 10%;
   position: relative;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
-  -webkit-box-shadow: 0px 1px 3px 0px $colour-grey-1;
-  box-shadow: 0px 1px 3px 0px $colour-grey-1;
+  -webkit-box-shadow: 0px 1px 3px 0px $colour-grey;
+  box-shadow: 0px 1px 3px 0px $colour-grey;
 
   .close {
     height: 14px;
     width: 14px;
     border-radius: 50px;
-    background: $colour-primary-light;
+    background: $colour-primary--light;
     cursor: pointer;
     position: absolute;
     top: 10px;
     right: 10px;
 
     &:hover {
-      background: $colour-primary-dark;
+      background: $colour-primary--dark;
     }
 
     &:active {
@@ -74,7 +73,7 @@
     }
 
     &:before {
-      content: "x";
+      content: 'x';
       position: absolute;
       top: -6px;
       left: 3px;
@@ -84,8 +83,8 @@
 }
 
 .address {
-  font-size: $small-font-size*0.8;
-  color: $colour-grey-3;
+  font-size: $small-font-size * 0.8;
+  color: $colour-grey--light;
   width: 80%;
   height: 12px;
   border-radius: 3px;
@@ -93,7 +92,7 @@
   position: absolute;
   top: 9px;
   left: 35px;
-  background: $colour-grey-0;
+  background: $colour-grey--light;
   border: none;
 }
 
@@ -104,7 +103,7 @@
 .tab {
   display: inline-block;
   font-size: $small-font-size * 0.7;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   min-width: 45px;
   margin: 24px 8px;
   padding: 10px;
@@ -114,7 +113,7 @@
   text-align: center;
   font-weight: 900;
   cursor: pointer;
-  background: $colour-primary-light;
+  background: $colour-primary--light;
   color: #fff;
 
   &:hover {
@@ -127,7 +126,6 @@
 }
 
 .tab.active {
-  background: $colour-pop;
   color: $colour-primary;
 }
 
@@ -156,7 +154,7 @@
   display: none;
 
   i {
-    color: $colour-primary-light;
+    color: $colour-primary--light;
     font-size: 2.5em;
     position: absolute;
     top: 8px;
@@ -164,7 +162,7 @@
   }
 
   &:hover {
-    background: $colour-primary-dark;
+    background: $colour-primary--dark;
   }
 }
 
@@ -175,7 +173,7 @@
 .tooltip-top {
   visibility: hidden;
   color: #fff;
-  background-color: $colour-primary-dark;
+  background-color: $colour-primary--dark;
   text-align: center;
   padding: 5px;
   border-radius: 6px;
@@ -184,7 +182,7 @@
   left: -23px;
 
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: -40%;
     left: 40%;
@@ -218,8 +216,7 @@
   width: 85%;
   padding: 15px;
   border-radius: 5px;
-  background: $colour-grey-2;
-  color: $colour-grey-3;
+  color: $colour-grey--dark;
   position: absolute;
   top: 0px;
   left: 15px;

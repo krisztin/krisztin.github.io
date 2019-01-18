@@ -7,9 +7,9 @@ body {
   color: $text-color;
   background-color: $colour-white;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern"1;
-  -o-font-feature-settings: "kern"1;
-  font-feature-settings: "kern"1;
+  -webkit-font-feature-settings: 'kern'1;
+  -o-font-feature-settings: 'kern'1;
+  font-feature-settings: 'kern'1;
   -webkit-font-kerning: normal;
   font-kerning: normal;
   display: -webkit-box;
@@ -74,14 +74,14 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: $base-font-weight*2;
+  font-weight: $base-font-weight * 2;
 }
 
 .text-jumbo {
-  font-size: $base-font-size * 4;
+  font-size: $base-font-size * 2;
 
   @include media-query($mobile) {
-    font-size: $base-font-size *3;
+    font-size: $base-font-size * 3;
   }
 }
 
@@ -106,14 +106,13 @@ button.btn.btn-light {
 .btn {
   display: inline-block;
   border-radius: $border-radius;
-  font-size: $base-font-size*1.2;
-  letter-spacing: .1em;
+  font-size: $base-font-size * 1.2;
+  letter-spacing: 0.1em;
   padding: $base-font-size;
   margin: $base-font-size 0;
   margin-right: $base-font-size;
-  min-width: $base-font-size*10;
+  min-width: $base-font-size * 10;
   text-decoration: none;
-  text-transform: uppercase;
   text-align: center;
   font-weight: 900;
 
@@ -137,9 +136,7 @@ a.btn-light {
   }
 }
 
-.btn-light.active {
-  background: $colour-pop;
-}
+.btn-light.active {}
 
 .btn-light:hover,
 .btn-light:active {
@@ -176,7 +173,7 @@ a:visited.btn-light-text {
 .btn-light-text:hover,
 .btn-dark-primary:hover,
 .btn-dark-secondary:hover {
-  background: $colour-primary-dark;
+  background: $colour-primary--dark;
 }
 
 /* The dark side...of buttons*/
@@ -194,7 +191,7 @@ a.btn-dark-primary {
 }
 
 .btn-dark-text:hover {
-  color: $colour-primary-dark;
+  color: $colour-primary--dark;
 }
 
 .btn-dark-secondary {
@@ -248,14 +245,13 @@ a.btn-dark-primary {
 a {
   color: $colour-primary;
   text-decoration: none;
-  font-weight: 600;
 
   &:visited {
     color: $colour-primary;
   }
 
   &:hover {
-    color: $colour-primary-dark;
+    color: $colour-primary--light;
     text-decoration: none;
   }
 }
@@ -272,6 +268,6 @@ img {
 figcaption {
   font-size: $small-font-size;
   font-style: italic;
-  color: $colour-grey-dark;
+  color: $colour-grey--dark;
   text-align: center;
 }
