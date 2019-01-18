@@ -1,164 +1,20 @@
 <div class="pad-tb--lg wrapper">
   <h2 class="text-jumbo">&#60;Projects&#62;</h2>
-  <div id="projectButtons" class="btn-container">
-    <button class="btn active btn-light" onclick="filterProjects('all')"> Show all</button>
-    <button class="btn btn-light" onclick="filterProjects('html')"> HTML5</button>
-    <button class="btn btn-light" onclick="filterProjects('css')"> CSS3/Sass</button>
-    <button class="btn btn-light" onclick="filterProjects('js')"> JavaScript</button>
-    <button class="btn btn-light" onclick="filterProjects('react')"> React</button>
-    <button class="btn btn-light" onclick="filterProjects('php')"> PHP</button>
-    <button class="btn btn-light" onclick="filterProjects('wp')"> WordPress</button>
-    <button class="btn btn-light" onclick="filterProjects('drupal')"> Drupal</button>
-    <button class="btn btn-light" onclick="filterProjects('uxui')"> UX/UI</button>
-  </div>
-  <div class="flex-container">
-    <article class="project-card picturebg" data-tech="html react css js uxui">
-      <a href="https://github.com/krisztin/recat" target="_blank">
-        <header class="pad">
-          <h2><i class="fab fa-react"></i> Recat: a ReactJS app</h2>
-          <div class="tags">
-            <h4 class="tag">HTML</h4>
-            <h4 class="tag">Sass</h4>
-            <h4 class="tag">JavaScript</h4>
-            <h4 class="tag">ReactJS</h4>
-            <h4 class="tag">UX/UI</h4>
-          </div>
-        </header>
-        <img src="../assets/img/project_recat.png" alt="recat react app">
-        <div class="project-description pad">
-          <p>Using Create-React-App for prototyping Recat: a Tinder based cat adoption app.</p>
-        </div>
-      </a>
-    </article>
-    <article class="project-card picturebg" data-tech="html css js uxui">
-      <a href="https://github.com/krisztin/danskat" target="_blank">
-        <header class="pad">
-          <h2><i class="far fa-money-bill-alt"></i> Danskat: Danish tax calculator</h2>
-          <div class="tags">
-            <h4 class="tag">HTML</h4>
-            <h4 class="tag">CSS</h4>
-            <h4 class="tag">JavaScript</h4>
-            <h4 class="tag">UX/UI</h4>
-          </div>
-        </header>
-        <img src="../assets/img/project_danskat.png" alt="danish income tax calculator">
-        <div class="project-description pad">
-          <p>Calculating Danish income tax is tedious and time consuming. This calculator cuts a few corners for those quick checks when accuracy doesn't matter that much.</p>
-        </div>
-      </a>
-    </article>
-    <article class="project-card picturebg" data-tech="html css js uxui">
-      <a href="https://codepen.io/krisztiiin/full/wrVWZJ/" target="_blank">
-        <header class="pad">
-          <h2><i class="fab fa-twitch"></i> Twitch API</h2>
-          <div class="tags">
-            <h4 class="tag">HTML</h4>
-            <h4 class="tag">CSS</h4>
-            <h4 class="tag">JavaScript \ JQuery</h4>
-            <h4 class="tag">UX/UI</h4>
-          </div>
-        </header>
-        <img src="../assets/img/project_twitch.jpg" alt="twitch api app">
-        <div class="project-description pad">
-          <p>Working with the Twitch API to build an app showing user statuses along with stream info. Made for a freeCodeCamp's intermediate front-end challenge.</p>
-          <h3>On top of the user stories I have also added:</h3>
-          <ul>
-            <li>Filtering buttons to show only online users.</li>
-            <li>Channel profile pictures.</li>
-          </ul>
-        </div>
-      </a>
-    </article>
-    <article class="project-card picturebg" data-tech="html css js uxui">
-      <a href="https://krisztin.github.io/projects/fcc-weather/" target="_blank">
-        <header class="pad">
-          <h2><i class="fas fa-snowflake"></i> Weather API</h2>
-          <div class="tags">
-            <h4 class="tag">HTML</h4>
-            <h4 class="tag">CSS</h4>
-            <h4 class="tag">JavaScript \ JQuery</h4>
-            <h4 class="tag">UX/UI</h4>
-          </div>
-        </header>
-        <img src="../assets/img/project_weather.png" alt="screenshot of weather site">
-        <p class="project-description pad">Using HTML5 Geolocation and a weather API to show the current, local weather.</p>
-      </a>
-    </article>
-    <article class="project-card picturebg" data-tech="uxui css html js">
-      <a href="https://codepen.io/krisztiiin/full/boByVw/" target="_blank">
-        <header class="pad">
-          <h2><i class="far fa-comment-dots"></i> Random Quote Generator</h2>
-          <div class="tags">
-            <h4 class="tag">HTML</h4>
-            <h4 class="tag">CSS</h4>
-            <h4 class="tag">JavaScript \ JQuery</h4>
-            <h4 class="tag">UX/UI</h4>
-          </div>
-        </header>
-        <img src="../assets/img/project_random.png" alt="screenshot of the random quote generator">
-        <p class="project-description pad">Working with a quote API to display a random, design-themed quote with a 'new quote' and 'tweet' button.</p>
-      </a>
-    </article>
-    <article class="project-card picturebg" data-tech="html css uxui js">
-      <a href="https://codepen.io/krisztiiin/pen/jzvNJK" target="_blank">
-        <header class="pad">
-          <h2><i class="fas fa-dice"></i> Euromillions Guessing Game</h2>
-          <div class="tags">
-            <h4 class="tag">HTML</h4>
-            <h4 class="tag">CSS</h4>
-            <h4 class="tag">UX/UI</h4>
-            <h4 class="tag">JavaScript \ JQuery</h4>
-          </div>
-        </header>
-        <img src="../assets/img/project_euro.png" alt="screenshot of the euromillions game">
-        <p class="project-description pad">A little anti-gambling random number guessing game.</p>
-      </a>
-    </article>
-    <article class="project-card picturebg" data-tech="css js html php wp uxui">
-        <a href="https://github.com/krisztin/wp-shelter-theme" target="_blank">
-          <header class="pad">
-            <h2><i class="fab fa-wordpress-simple"></i> WordPress Cat Shelter theme</h2>
-            <div class="tags">
-                <h4 class="tag">HTML</h4>
-                <h4 class="tag">Sass</h4>
-                <h4 class="tag">PHP</h4>
-                <h4 class="tag">JavaScript</h4>
-                <h4 class="tag">WordPress</h4>
-                <h4 class="tag">UX/UI</h4>
-              </div>
-          </header>
-          <img src="../assets/img/proj_catshelter.jpg" alt="screenshot of catshelter wordpress site">
-          <div class="project-description pad">
-            <p>Practicing WordPress theme development by building a theme. I have learned about WordPress functions, the hierarchy and creating and adding a template-part amongst many other things. If you are interested in the code and a more detailed documentation click away.</p>
-            <p><em>Still very much a work in progress.</em></p>
-          </div>
-        </a>
-      </article>
-  </div>
-  <div class="flex-container">
-    <article class="project-card website-card" data-tech="html css php drupal">
-      <a href="https://wellcome.ac.uk/" target="_blank">
-        <h2><i class="fab fa-drupal"></i> Wellcome Trust</h2>
-        <p>As an Apprentice Software Dev I've worked on the front and back-end of Wellcome's website.</p>
-        <div class="tags">
-          <h4 class="tag">HTML</h4>
-          <h4 class="tag">Sass</h4>
-          <h4 class="tag">Drupal</h4>
-          <h4 class="tag">PHP</h4>
-        </div>
-      </a>
-    </article>
-    <article class="project-card website-card" data-tech="uxui wp">
-      <a href="https://themayhew.org" target="_blank">
-        <h2><i class="fab fa-wordpress-simple"></i> Mayhew Animal Home</h2>
-        <p>Analysing user journeys through traffic data, conducting user research and collecting stakeholder needs. Project managing development.</p>
-        <div class="tags">
-          <h4 class="tag">WordPress</h4>
-          <h4 class="tag">UI/UX</h4>
-        </div>
-      </a>
-    </article>
-  </div>
+  <article class="flex-container">
+    <div class="left-copy">
+      <h3>A11y Wellcome</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut labore neque quasi! Alias laboriosam corrupti, asperiores velit similique cumque veritatis recusandae quam esse repellendus ea debitis suscipit aut voluptates adipisci?</p>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas quidem magni reprehenderit modi! Explicabo beatae minus iure, cupiditate voluptatum aut magnam ab, quos recusandae eaque deleniti. Dolor molestias reprehenderit rerum?</p>
+      <div class="inline">
+        <a href="http://" target="_blank" rel="noopener noreferrer">Case study</a>
+        <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source code</a>
+        <a href="http://" target="_self">Visit site</a>
+      </div>
+    </div>
+    <div>
+      browser
+    </div>
+  </article>
   <footer>
     <a href="https://github.com/krisztin" target="_blank" class="btn btn-light-text">
       <i class="fab fa-github"></i> More on Github
@@ -168,28 +24,3 @@
     </a>
   </footer>
 </div>
-
-
-<script>
-const projectCards = Array.from(document.querySelectorAll('.project-card'));
-const projectButtonsContainer = document.getElementById('projectButtons');
-const projectButtons = projectButtonsContainer.querySelectorAll('.btn');
-
-filterProjects('all');
-
-function filterProjects(language) {
-  if (language === "all") {
-    projectCards.forEach(card => card.classList.add('show'));
-  } else {
-    projectCards.forEach(card => card.classList.remove('show'));
-    let matches = projectCards
-                    .filter(card => card.dataset.tech.includes(language));
-    matches.forEach(match => match.classList.add('show'));
-  }
-}
-
-projectButtons.forEach(button => button.addEventListener('click', function() {
-  projectButtons.forEach(button => button.classList.remove('active'));
-  this.classList.add('active');
-}));
-</script>
