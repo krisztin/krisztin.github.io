@@ -10,25 +10,25 @@ $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 // Colours
-$colour-primary: #303f9f !default;
-$colour-primary-dark: #00186f !default;
-$colour-primary-light: #6668d0 !default;
-$colour-secondary: #ffeb3b !default;
+$colour-primary: #7755b2 !default;
+$colour-primary--dark: #00186f !default;
+$colour-primary--light: #523a7c !default;
+$colour-secondary: #ffd60c !default;
 $colour-white: #fdfdfd !default;
 
-$text-color: #242a38 !default;
-$text-color-light:#fff !default;
+$text-color: #212121 !default;
+$text-color-light: #fff !default;
 $text-link-color: $colour-primary;
 
 $colour-grey: #949494 !default;
-$colour-grey-light: lighten($colour-grey, 40%) !default;
-$colour-grey-dark: darken($colour-grey, 25%) !default;
+$colour-grey--light: lighten($colour-grey, 40%) !default;
+$colour-grey--dark: darken($colour-grey, 25%) !default;
 
 // Alignment & Spacings
 $spacing-unit: 30px !default;
 
 %clearfix:after {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -51,7 +51,7 @@ $on-laptop: 800px !default;
 }
 
 // Element mixins and extends
-$border-radius: 25px !default;
+$border-radius: 5px !default;
 
 @mixin bg-colour-full($colour) {
   background-color: $colour;
@@ -60,8 +60,4 @@ $border-radius: 25px !default;
 }
 
 // Import partials.
-@import "minima/base",
-"minima/layout",
-"minima/syntax-highlighting",
-"minima/home"
-;
+@import 'minima/base', 'minima/layout', 'minima/home';
