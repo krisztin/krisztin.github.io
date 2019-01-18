@@ -1,5 +1,11 @@
-<header class="full-bgcol-pop">
-
+<header>
+  <div class="stripes">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+  </div>
   <div class="wrapper">
     <div class="pad-tb">
       {%- assign default_paths = site.pages | map: "path" -%}
@@ -8,7 +14,6 @@
         <a class="site-title" rel="author" href="{{ site.url }}">&#60; k &#62;</a>
         <div class="site-links">
           <a class="page-link" href="/about" class="btn-dark-text">About me</a>
-          <a class="page-link" href="/blog" class="btn-dark-text">Blog</a>
           <div class="social-links">
             <a class="page-link" href="https://www.linkedin.com/in/nkriszti/" target="_blank" aria-label="linkedin profile" rel="noopener">
               <i class="fab fa-linkedin"></i>
@@ -25,6 +30,9 @@
     </div>
     {% if page.layout == 'home' %}
       <div class="pad-tb">
+        <h1>Hi.<br>I'm Christina a Front-End <br> Developer</h1>
+        <h2>with a love for UX</h2>
+        <p></p>
       </div>
     {%- endif -%}
   </div>
