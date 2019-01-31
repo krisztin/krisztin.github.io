@@ -235,8 +235,7 @@ a {
   }
 
   &:hover {
-    color: $colour-primary--light;
-    text-decoration: none;
+    text-decoration: underline;
   }
 }
 
