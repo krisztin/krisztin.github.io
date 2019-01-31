@@ -21,22 +21,6 @@
   padding-top: $base-font-size * 4;
 }
 
-/**
- * Backgrounds
- */
-.bgcol--primary {
-  @include bg-colour-full($colour-primary);
-}
-
-.bgcol--primary {
-  color: $text-color-light;
-
-  i {
-    color: $text-color-light;
-    font-weight: 400;
-  }
-}
-
 /*
  Alignments
 */
