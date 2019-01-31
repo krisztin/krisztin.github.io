@@ -53,10 +53,28 @@ $on-laptop: 800px !default;
 // Element mixins and extends
 $border-radius: 5px !default;
 
-@mixin bg-colour-full($colour) {
-  background-color: $colour;
-  width: 100%;
-  margin: 0 auto;
+%clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+@mixin skew($degree: -7deg) {
+  -webkit-transform: skewY($degree);
+  transform: skewY($degree);
+  -webkit-transform-origin: 0;
+  transform-origin: 0;
+}
+
+@mixin flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin transition {
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
 }
 
 // Import partials.
