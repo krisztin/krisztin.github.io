@@ -255,3 +255,18 @@ figcaption {
   color: $colour-grey--dark;
   text-align: center;
 }
+
+/**
+ * Cta
+ */
+
+.cta {
+  position: relative;
+  background: $colour-primary;
+  color: $text-color-light;
+  padding: 1rem;
+
+  a {
+    color: $colour-secondary;
+  }
+}
