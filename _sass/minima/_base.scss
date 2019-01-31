@@ -98,20 +98,14 @@ button {
   border: none;
 }
 
-button.btn.btn-light {
-  margin: $spacing-unit/4;
-  margin-right: $spacing-unit/4;
-}
-
 .btn {
+  position: relative;
+  font-weight: bold;
   display: inline-block;
-  border-radius: $border-radius;
-  font-size: $base-font-size * 1.2;
-  letter-spacing: 0.1em;
   padding: $base-font-size;
   margin: $base-font-size 0;
   margin-right: $base-font-size;
-  min-width: $base-font-size * 10;
+  min-width: $base-font-size * 7;
   text-decoration: none;
   text-align: center;
   font-weight: 900;
@@ -119,6 +113,11 @@ button.btn.btn-light {
   &:last-child {
     margin-right: 0;
   }
+
+  &:active {
+    background: $colour-secondary;
+    color: $colour-primary--light;
+}
 }
 
 @media screen and (max-width: 630px) {
@@ -127,93 +126,72 @@ button.btn.btn-light {
   }
 }
 
+/* Secondary colour top and bottom stripe decoration */
+.btn-light,
+.btn-light--secondary,
+.cta {
+
+  &:before,
+  &:after {
+    @include transition;
+    border: 0 solid transparent;
+    content: '';
+    height: 24px;
+    position: absolute;
+    width: 60%;
+  }
+
+  &:before {
+    border-top: 5px solid $colour-secondary;
+    left: 0px;
+    top: -4px;
+}
+
+  &:after {
+    border-bottom: 5px solid $colour-secondary;
+    bottom: -3px;
+    right: 0px;
+  }
+
+  &:hover:before,
+  &:hover:after {
+    height: 100%;
+    width: 80%;
+  }
+}
+
 a.btn-light {
-  background: $colour-white;
+  background: $colour-primary;
+  color: $text-color-light;
+
+  i {
+  color: $text-color-light;
+}
+
+  &:hover {
+  color: $text-color-light;
+}
+}
+
+.btn-light--secondary {
+  border: $colour-primary 3px solid;
   color: $colour-primary;
-
-  i {
-    color: $colour-primary;
-  }
-}
-
-.btn-light.active {}
-
-.btn-light:hover,
-.btn-light:active {
-  color: $text-color-light;
-
-  i {
-    color: $text-color-light;
-  }
-}
-
-.btn-light-secondary {
-  border: $colour-white 2px solid;
-  color: $text-color-light;
   padding: 14px;
 }
 
-.btn-light:active,
-.btn-light-secondary:active,
-.btn-light-text:active {
-  background: $colour-secondary;
-}
-
-a.btn-light-text {
-  color: $text-color-light;
+a.btn-light--text {
+  @include transition;
   padding: 14px;
-}
+  display: inline-block;
 
-a:visited.btn-light-text {
-  color: $text-color-light;
+  &:hover {
+    @include skew(-3deg);
 }
-
-.btn-light:hover,
-.btn-light-secondary:hover,
-.btn-light-text:hover,
-.btn-dark-primary:hover,
-.btn-dark-secondary:hover {
-  background: $colour-primary--dark;
 }
 
 /* The dark side...of buttons*/
 
-.btn-dark-primary {
-  background: $colour-primary;
-}
 
-a.btn-dark-primary {
-  color: #fff;
-
-  &:visited {
-    color: #fff;
-  }
-}
-
-.btn-dark-text:hover {
-  color: $colour-primary--dark;
-}
-
-.btn-dark-secondary {
-  border: $colour-primary 2px solid;
-  color: $colour-primary;
-  padding: 14px;
-}
-
-.btn-dark-primary:active,
-.btn-dark-secondary:active,
-.btn-dark-text:active {
-  background: $colour-secondary;
-}
-
-.btn-dark-text {
-  color: $colour-primary;
-  padding: 14px;
-}
-
-.btn-dark-secondary:hover {
-  color: $text-color-light;
-}
 
 /**
  * Wrapper
