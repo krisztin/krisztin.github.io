@@ -1,7 +1,9 @@
 ---
 layout: page
 title: Blog
+exclude: true
 ---
+
 <div class="wrapper">
 {%- for post in site.posts -%}
     <article class="blog-listing">
