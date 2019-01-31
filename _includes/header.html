@@ -1,4 +1,4 @@
-<header>
+<header class="relativity">
   <div class="stripes">
       <span></span>
       <span></span>
@@ -13,18 +13,15 @@
       <nav class="site-nav">
         <a class="site-title" rel="author" href="{{ site.url }}">&#60; k &#62;</a>
         <div class="site-links">
-          <a class="page-link" href="/about" class="btn-dark-text">About me</a>
-          <div class="social-links">
-            <a class="page-link" href="https://www.linkedin.com/in/nkriszti/" target="_blank" aria-label="linkedin profile" rel="noopener">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a class="page-link" href="https://github.com/krisztin" target="_blank" aria-label="github profile" rel="noopener">
-              <i class="fab fa-github"></i>
-            </a>
-            <a class="page-link" href="https://codepen.io/krisztiiin/" target="_blank" aria-label="codepen profile" rel="noopener">
-              <i class="fab fa-codepen"></i>
-            </a>
-          </div>
+          {%- for path in page_paths -%}
+            {%- assign my_page = site.pages | where: "path", path | first -%}
+            {%- if my_page.title -%}
+              {%- unless my_page.exclude -%}
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {%- endunless -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {% include social-links.html -%}
         </div>
       </nav>
     </div>
