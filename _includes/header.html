@@ -29,10 +29,20 @@
       </nav>
     </div>
     {% if page.layout == 'home' %}
-      <div class="pad-tb">
-        <h1>Hi.<br>I'm Christina a Front-End <br> Developer</h1>
-        <h2>with a love for UX</h2>
-        <p></p>
+      <div class="pad-tb flex-container">
+        <div class="flex-item two-col">
+          <h1>Hi.<br>I'm a Front-End Developer</h1>
+          <h2>and nuts about UX</h2>
+          <p>After almost ten years in social and video marketing I ran screaming from what social media has become. Now, I’m on a mission to make the web a better, less frustrating place using my skills mastered as a marketer to understand audiences and&nbsp;<strong>&nbsp;design and build human-centred experiences&nbsp;</strong>.
+          </p>
+        </div>
+        <div class="flex-item two-col">
+         <img src="assets/img/undraw_mind_map_cwng.svg" alt="">
+          </div>
+      </div>
+      {% else %}
+      <div class="post-header wrapper pad-tb">
+          <h1 class="post-title">{{ page.title | escape }}</h1>
       </div>
     {%- endif -%}
   </div>
