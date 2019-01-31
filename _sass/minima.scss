@@ -7,12 +7,12 @@ sans-serif !default;
 $base-font-size: 16px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$base-line-height: 1.7 !default;
 
 // Colours
-$colour-primary: #7755b2 !default;
-$colour-primary--dark: #00186f !default;
-$colour-primary--light: #523a7c !default;
+$colour-primary: #523a7c !default;
+$colour-primary--dark: #3A2957 !default;
+$colour-primary--light: #8961ce !default;
 $colour-secondary: #ffd60c !default;
 $colour-white: #fdfdfd !default;
 
@@ -21,19 +21,11 @@ $text-color-light: #fff !default;
 $text-link-color: $colour-primary;
 
 $colour-grey: #949494 !default;
-$colour-grey--light: lighten($colour-grey, 40%) !default;
+$colour-grey--light: lighten($colour-grey, 30%) !default;
 $colour-grey--dark: darken($colour-grey, 25%) !default;
 
 // Alignment & Spacings
 $spacing-unit: 30px !default;
-
-%clearfix:after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-// Width of the content area
 $content-width: 1200px !default;
 
 // Media query breakpoints
