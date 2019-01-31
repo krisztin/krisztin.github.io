@@ -12,10 +12,8 @@ body {
   font-feature-settings: 'kern'1;
   -webkit-font-kerning: normal;
   font-kerning: normal;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   min-height: 100vh;
+  @include flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -123,7 +121,7 @@ button {
   &:active {
     background: $colour-secondary;
     color: $colour-primary--light;
-}
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -151,7 +149,7 @@ button {
     border-top: 5px solid $colour-secondary;
     left: 0px;
     top: -4px;
-}
+  }
 
   &:after {
     border-bottom: 5px solid $colour-secondary;
@@ -171,12 +169,12 @@ a.btn-light {
   color: $text-color-light;
 
   i {
-  color: $text-color-light;
-}
+    color: $text-color-light;
+  }
 
   &:hover {
-  color: $text-color-light;
-}
+    color: $text-color-light;
+  }
 }
 
 .btn-light--secondary {
@@ -192,7 +190,7 @@ a.btn-light--text {
 
   &:hover {
     @include skew(-3deg);
-}
+  }
 }
 
 /* The dark side...of buttons*/
