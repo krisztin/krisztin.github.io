@@ -66,10 +66,6 @@ consistently the primary buttons, the step-by-step guide now has a clearer struc
 	<h2><i class="fas fa-graduation-cap"></i> Certificates and Courses</h2>
 
     <div class="mar-tb">
-    	<h4><a href="https://learnredux.com/" target="_blank" rel="noopener">Redux</a> by Wes Bos</h4>
-    	<p>Building 'Reduxstagram' — a simple photo app that simplifies the core ideas behind Redux, React Router and React.js.</p>
-    </div>
-    <div class="mar-tb">
     	<h4><a href="https://reactforbeginners.com/" target="_blank" rel="noopener">React</a> by Wes Bos</h4>
     	<p>Building a React.js app from start to finish. Working with create-react-app, react Components, JSX, maintaining state, communication between components, real time web socket data with Firebase, React Router 4 and much more.</p>
     </div>
@@ -83,7 +79,7 @@ consistently the primary buttons, the step-by-step guide now has a clearer struc
     </div>
     <div class="mar-tb">
     	<h4>Pre-Apprenticeship Drupal Bootcamp</h4>
-    A three week bootcamp to get familiar with Drupal by <a href="{{ site.baseurl }}{% link _posts/2018-01-12-bootcamp1.md %}">building a blog and a project site</a>.
+    <p>A three week bootcamp to get familiar with Drupal by building a blog and a project site.</p>
     </div>
     <div class="mar-tb">
     	<h4>Google Front End Developer Scholarship</h4>
