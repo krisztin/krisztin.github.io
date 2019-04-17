@@ -51,10 +51,18 @@
   max-width: 50%;
 }
 
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
 @include media-query(650px) {
   .two-col {
     max-width: 100%;
   }
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 /**
