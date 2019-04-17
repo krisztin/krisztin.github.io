@@ -297,3 +297,15 @@ figcaption {
     color: $colour-secondary;
   }
 }
+
+.greybg {
+  background-color: #f1f1f1;
+  @include skew(-3deg);
+}
+
+.line-secondary {
+  background-color: $colour-primary--light;
+  @include skew(-3deg);
+  height: 22px;
+  width: 80%;
+}
