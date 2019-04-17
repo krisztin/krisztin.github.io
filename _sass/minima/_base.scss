@@ -30,6 +30,25 @@ main {
 }
 
 /**
+ * Wrapper
+ */
+
+.wrapper {
+  max-width: $content-width;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
+
+  @include media-query($mobile) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
+    padding-right: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+  }
+}
+
+/**
  * Typography
  */
 
@@ -79,8 +98,10 @@ h6 {
   font-weight: $base-font-weight * 2;
 }
 
-.text-jumbo {
+h2.text-jumbo {
+
   font-size: $base-font-size * 2;
+  max-width: $content-width;
 
   @include media-query($mobile) {
     font-size: $base-font-size * 3;
@@ -91,6 +112,49 @@ h1 {
   background: $colour-primary;
   color: $colour-secondary;
   display: inline;
+}
+
+h2,
+h3 {
+  color: $colour-primary;
+}
+
+h1 {
+  font-size: $base-font-size * 2.2;
+}
+
+h2 {
+  font-size: $base-font-size * 2;
+}
+
+h3 {
+  font-size: $base-font-size * 1.8;
+}
+
+.highlight {
+  background: $colour-secondary;
+  color: $colour-primary;
+  display: inline-block;
+  @include skew;
+  padding-left: $base-font-size;
+  padding-right: $base-font-size;
+}
+
+/**
+ * Links
+ */
+
+a {
+  color: $colour-primary;
+  text-decoration: none;
+
+  &:visited {
+    color: $colour-primary;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 /**
@@ -131,12 +195,14 @@ button {
 @media screen and (max-width: 630px) {
   .btn {
     min-width: $base-font-size;
+    display: block;
+    margin-right: 0;
   }
 }
 
-/* Secondary colour top and bottom stripe decoration */
+/* Top and bottom stripe decoration in 2ndry colour */
 .btn-light,
-.btn-light--secondary,
+.btn-light--ghost,
 .cta {
 
   &:before,
@@ -172,16 +238,18 @@ a.btn-light {
   background: $colour-primary;
   color: $text-color-light;
 
+  &:visited,
   i {
     color: $text-color-light;
   }
 
   &:hover {
     color: $text-color-light;
+    background: $colour-primary--dark;
   }
 }
 
-.btn-light--secondary {
+.btn-light--ghost {
   border: $colour-primary 3px solid;
   color: $colour-primary;
   padding: 14px;
@@ -194,50 +262,6 @@ a.btn-light--text {
 
   &:hover {
     @include skew(-3deg);
-  }
-}
-
-/* The dark side...of buttons*/
-
-
-
-/**
- * Wrapper
- */
-
-.wrapper {
-  max-width: $content-width;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($mobile) {
-    max-width: calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-.wrapper-skinny {
-  max-width: $content-width/2;
-}
-
-/**
- * Links
- */
-
-a {
-  color: $colour-primary;
-  text-decoration: none;
-
-  &:visited {
-    color: $colour-primary;
-  }
-
-  &:hover {
-    text-decoration: underline;
   }
 }
 
@@ -267,7 +291,9 @@ figcaption {
   color: $text-color-light;
   padding: 1rem;
 
-  a {
+  a,
+  h1,
+  h2 {
     color: $colour-secondary;
   }
 }
