@@ -1,30 +1,42 @@
 - title: Danskat
-  description: 'Calculating Danish income tax is tedious and time consuming. My calculator cuts a few corners for those quick checks when accuracy doesn't matter that much.'
+  description: Calculating Danish income tax is tedious and time consuming. My calculator cuts a few corners for those quick checks when accuracy doesn't matter that much.
   img: project_danskat.png
   primary-link: https://danskat.kriszt.in/
-  secondary-link: https://github.com/krisztin/danskat
-  tags: [ES6, UX/UI]
+  github-link: https://github.com/krisztin/danskat
+  tags:
+    - ES6
+    - UX/UI
 - title: ReCat
-  description: 'Using Create-React-App for prototyping a Tinder based cat adoption app.'
+  description: Using Create-React-App for prototyping a Tinder based cat adoption app.
   img: project_recat.png
   primary-link: https://recat.kriszt.in/
-  secondary-link: https://github.com/krisztin/recat
-  tags: [React.js, Sass, UX/UI]
+  github-link: https://github.com/krisztin/recat
+  tags:
+    - React.js
+    - Sass
+    - UX/UI
 - title: Twitch fetch
-  description: 'Working with the Twitch API to build a page showing user statuses along with stream info. Made for a front-end code challenge.'
+  description: Working with the Twitch API to build a page showing user statuses along with stream info. Made for a front-end code challenge.
   img: project_twitch.jpg
   primary-link: https://codepen.io/krisztiiin/full/wrVWZJ/
-  tags: [.js, UX/UI]
+  tags:
+    - .js
+    - UX/UI
 - title: WordPress theming
-  description: '<p>What’s the best way to learn WordPress theme building? Well, building a theme.</p>
-    <p>I have learned about WordPress functions, the hierarchy and creating and adding a template-part amongst many other things.</p>'
+  description:
+    <p>What’s the best way to learn WordPress theme building? Well, building a theme.</p>
+    <p>I have learned about WordPress functions, the hierarchy and creating and adding a template-part amongst many other things.</p>
   img: proj_catshelter.jpg
-  primary-link: https://github.com/krisztin/wp-shelter-theme
-  tags: [WorPress, Sass, PHP]
+  github-link: https://github.com/krisztin/wp-shelter-theme
+  tags:
+    - WorPress
+    - Sass
+    - PHP
 - title: Is it raining?
-  description: 'My take on the classic weather app using HTML5 Geolocation and a weather API to show the current, local weather.<br>
-  Check out oldfunc.js to see how much I've developed.'
+  description: My take on the classic weather app using HTML5 Geolocation and a weather API to show the current, local weather.<br>Check out oldfunc.js to see how much I've developed.
   img: project_weather.png
   primary-link: https://krisztin.github.io/projects/fcc-weather/
-  secondary-link: https://github.com/krisztin/projects/tree/master/fcc-weather
-  tags: [.js, UX/UI]
+  github-link: https://github.com/krisztin/projects/tree/master/fcc-weather
+  tags:
+    - .js
+    - UX/UI
