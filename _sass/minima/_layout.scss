@@ -273,6 +273,39 @@ header {
     margin-right: 3rem;
   }
 }
+
+/*
+* Projects
+*/
+
+.projects {
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.project {
+  min-width: 400px;
+  max-width: 500px;
+  flex: 1;
+  padding: $base-font-size;
+
+  .tag {
+    font-size: $base-font-size / 1.3;
+    background-color: $colour-grey--light;
+    margin-right: $base-font-size / 2;
+    padding: 0 $base-font-size / 3;
+  }
+
+  span:first-of-type {
+    margin-left: $base-font-size / 2;
+  }
+
+  @media screen and (max-width: 420px) {
+    min-width: 220px;
+  }
+}
+
 /**
  * Footer
  */
