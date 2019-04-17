@@ -1,0 +1,22 @@
+<div class="flex-container justify-evenly projects">
+
+  {% for project in site.data.projects %}
+  <article class="flex-item project">
+    <img src="{{ site.baseurl }}/assets/img/{{ project.img }}">
+    <div class="flex-container">
+    <h3>{{ project.title }}</h3>
+      {% for tag in project.tags %}
+      <span class="tag">{{ tag }} </span>
+      {% endfor %}
+    </div>
+    <p>{{ project.description }}</p>
+    {% if project.github-link != null %}
+      <a class="btn btn-light" href="{{ project.github-link }}" target="_blank"><i class="fab fa-github"></i> Code && Docs</a>
+    {% endif %}
+    {% if project.primary-link != null %}
+      <a class="btn btn-light--ghost" href="{{ project.primary-link }}" target="_blank">Visit {{ project.title }}</a>
+    {% endif %}
+  </article>
+  {% endfor %}
+
+</div>
