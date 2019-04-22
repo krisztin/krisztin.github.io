@@ -45,6 +45,11 @@ main {
   dl {
     max-width: $text-width;
     margin: auto;
+    padding-bottom: $spacing-unit;
+  }
+
+  figure {
+    padding: $spacing-unit 0;
   }
 }
 
