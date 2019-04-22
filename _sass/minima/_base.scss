@@ -45,11 +45,19 @@ main {
   dl {
     max-width: $text-width;
     margin: auto;
-    padding-bottom: $spacing-unit;
+    padding-bottom: $base-font-size;
   }
 
   figure {
     padding: $spacing-unit 0;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    padding-top: $base-font-size * 1.2;
   }
 }
 
@@ -94,23 +102,6 @@ ul,
 figure {
   margin: 0;
   padding: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-ul,
-ol,
-dl,
-figure,
-%vertical-rhythm {
-  margin-bottom: $spacing-unit;
 }
 
 h1,

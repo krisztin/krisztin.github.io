@@ -4,10 +4,10 @@
   <article class="flex-item project">
     <img src="{{ site.baseurl }}/assets/img/{{ project.img }}">
     <div class="project-meta">
-      <div class="flex-container">
+      <div>
         <h3>{{ project.title }}</h3>
           {% for tag in project.tags %}
-          <span class="tag">{{ tag }} </span>
+          <p class="tag">{{ tag }} </p>
           {% endfor %}
       </div>
       <p>{{ project.description }}</p>
