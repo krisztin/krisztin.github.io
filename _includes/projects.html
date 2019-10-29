@@ -1,23 +1,31 @@
-<div class="flex-container justify-evenly projects">
+<div class="flex-container justify-even projects">
 
   {% for project in site.data.projects %}
-  <article class="flex-item project">
-    <img src="{{ site.baseurl }}/assets/img/{{ project.img }}">
-    <div class="project-meta">
-      <div>
-        <h3>{{ project.title }}</h3>
+  <article class="flex-item project relativity">
+    <a href="{{ project.primary-link}}" target="_blank" rel="noopener noreferrer">
+      <div class="img-wrapper">
+        <img src="{{ site.baseurl }}/assets/img/{{ project.img }}" alt="">
+      </div>
+      <div class="project-meta">
+          <h3>{{ project.title }}</h3>
+    </a>
           {% for tag in project.tags %}
           <p class="tag">{{ tag }} </p>
           {% endfor %}
-      </div>
       <p>{{ project.description }}</p>
-      {% if project.github-link != null %}
-        <a class="btn btn-light" href="{{ project.github-link }}" target="_blank"><i class="fab fa-github"></i> Code && Docs</a>
-      {% endif %}
-      {% if project.primary-link != null %}
-        <a class="btn btn-light--ghost" href="{{ project.primary-link }}" target="_blank">Visit {{ project.title }}</a>
-      {% endif %}
-    </div>
+      <div>
+      {% if project.github-link %}
+      <a class="btn btn-light" href="{{ project.github-link }}" target="_blank">
+        <svg viewBox="0 0 16 16" class="svg-social-icon" aria-hidden="true">
+          <use xlink:href="{{ '/assets/img/social-icons.svg#github' | relative_url }}"></use>
+        </svg> Code && Docs
+      </a>
+    {% endif %}
+    {% if project.primary-link %}
+      <a class="btn btn-light--ghost" href="{{ project.primary-link }}" target="_blank">Visit {{ project.title }}</a>
+    {% endif %}
+      </div>
+     </div>
   </article>
   {% endfor %}
 
