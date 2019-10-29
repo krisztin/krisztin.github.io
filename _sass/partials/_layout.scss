@@ -445,13 +445,18 @@ nav.just-space-between {
 
 footer {
   background: $colour-grey--light;
+  .svg-social-icon {
+    margin: 0.5rem;
+    padding: 1rem;
+    fill: $colour-primary;
+    &:hover {
+      fill: $colour-pink;
+    }
 }
-
-#contact a {
-  border-bottom: 8px solid $colour-secondary;
+  .page-link {
+    border: none;
   &:hover {
-    background-color: $colour-primary;
-    color: $colour-secondary;
-    text-decoration: none;
+      background-color: transparent;
+    }
   }
 }
