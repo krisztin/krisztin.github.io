@@ -5,8 +5,10 @@ baseurl: '' # the subpath of your site, e.g. /blog
 url: https://krisztin.github.io
 permalink: /blog/:title
 
+# Social
 github_username: krisztin
 linkedin_username: nkriszti
+codepen_username: krisztiiin
 
 # Build settings
 markdown: kramdown

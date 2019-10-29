@@ -1,11 +1,44 @@
 <div class="social-links">
-    <a class="page-link" href="https://www.linkedin.com/in/nkriszti/" target="_blank" aria-label="linkedin profile" rel="noopener">
-      <i class="fab fa-linkedin"></i>
+ {% if site.linkedin_username %}
+    <a
+      class="page-link"
+      href="https://www.linkedin.com/in/nkriszti/"
+      title="linkedin profile"
+      target="_blank"
+      aria-label="linkedin profile"
+      rel="noopener"
+    >
+    <svg viewBox="0 0 16 16" class="svg-social-icon" aria-hidden="true">
+        <use xlink:href="{{ '/assets/img/social-icons.svg#linkedin' | relative_url }}"></use>
+      </svg>
     </a>
-    <a class="page-link" href="https://github.com/krisztin" target="_blank" aria-label="github profile" rel="noopener">
-      <i class="fab fa-github"></i>
+  {% endif %}
+  {% if site.github_username %}
+    <a
+    class="page-link"
+    href="https://github.com/{{ site.github_username | cgi_escape | escape }}"
+    title="github profile"
+    target="_blank"
+    aria-label="github profile"
+    rel="noopener noreferrer"
+    >
+      <svg viewBox="0 0 16 16" class="svg-social-icon" aria-hidden="true">
+        <use xlink:href="{{ '/assets/img/social-icons.svg#github' | relative_url }}"></use>
+      </svg>
     </a>
-    <a class="page-link" href="https://codepen.io/krisztiiin/" target="_blank" aria-label="codepen profile" rel="noopener">
-      <i class="fab fa-codepen"></i>
-    </a>
-  </div>
+  {% endif %}
+  {% if site.codepen_username %}
+  <a
+    class="page-link"
+    href="https://codepen.io/{{ site.codepen_username | cgi_escape | escape }}"
+    title="codepen profile"
+    target="_blank"
+    aria-label="codepen profile"
+    rel="noopener"
+  >
+    <svg viewBox="0 0 24 24" class="svg-social-icon" aria-hidden="true">
+      <use xlink:href="{{ '/assets/img/social-icons.svg#codepen' | relative_url }}"></use>
+    </svg>
+  </a>
+  {% endif %}
+</div>
