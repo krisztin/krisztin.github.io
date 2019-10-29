@@ -1,19 +1,29 @@
+- title: Hygeine
+  description: Chrome Extension adding the Food Standards Agency's ratings to restaurants' menu pages on Deliveroo.
+  img: project_hygeine.png
+  primary-link: https://chrome.google.com/webstore/detail/hygeine/hbjddnbppdmlhlpbagfoghiemjemgfmk
+  github-link: https://github.com/krisztin/foodpoison-chrome
+  tags:
+    - Chrome Extension
+    - .js
+    - UX/UI
 - title: Danskat
-  description: Calculating Danish income tax is tedious and time consuming. My calculator cuts a few corners for those quick checks when accuracy doesn't matter that much.
+  description: Calculating Danish income tax is tedious and time consuming. My calculator cuts a few corners to save time.
   img: project_danskat.png
   primary-link: https://danskat.kriszt.in/
   github-link: https://github.com/krisztin/danskat
   tags:
     - ES6
     - UX/UI
-- title: ReCat
-  description: Using Create-React-App for prototyping a Tinder based cat adoption app.
-  img: project_recat.png
-  primary-link: https://recat.kriszt.in/
-  github-link: https://github.com/krisztin/recat
+- title: Is it raining?
+  description: My take on the classic weather app using HTML5 Geolocation and a weather API.<br><small>Check out oldfunc.js to see how much I've developed.</small>
+  img: project_weather.png
+  primary-link: https://krisztin.github.io/projects/fcc-weather/
+  github-link: https://github.com/krisztin/projects/tree/master/fcc-weather
   tags:
-    - React.js
-    - Sass
+    - HTML5
+    - CSS3
+    - .js
     - UX/UI
 - title: Twitch fetch
   description: Working with the Twitch API to build a page showing user statuses along with stream info. Made for a front-end code challenge.
@@ -23,8 +33,7 @@
     - .js
     - UX/UI
 - title: WordPress theming
-  description:
-    <p>What’s the best way to learn WordPress theme building? Well, building a theme.</p>
+  description: <p>What’s the best way to learn WordPress theme building? Well, building a theme.</p>
     <p>I have learned about WordPress functions, the hierarchy and creating and adding a template-part amongst many other things.</p>
   img: proj_catshelter.jpg
   github-link: https://github.com/krisztin/wp-shelter-theme
@@ -32,11 +41,3 @@
     - WorPress
     - Sass
     - PHP
-- title: Is it raining?
-  description: My take on the classic weather app using HTML5 Geolocation and a weather API to show the current, local weather.<br>Check out oldfunc.js to see how much I've developed.
-  img: project_weather.png
-  primary-link: https://krisztin.github.io/projects/fcc-weather/
-  github-link: https://github.com/krisztin/projects/tree/master/fcc-weather
-  tags:
-    - .js
-    - UX/UI
