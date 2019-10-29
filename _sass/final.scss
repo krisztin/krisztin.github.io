@@ -61,25 +61,6 @@ $border-radius: 5px !default;
   transform-origin: 0;
 }
 
-@mixin decor(
-  $top: null,
-  $right: null,
-  $bottom: null,
-  $left: null,
-  $height: null,
-  $width: null,
-  $colour: $colour-secondary
-) {
-  top: $top;
-  bottom: $bottom;
-  left: $left;
-  right: $right;
-  height: $height;
-  width: $width;
-  background-color: $colour;
-  position: absolute;
-}
-
 @mixin flex {
   display: -webkit-box;
   display: -ms-flexbox;
