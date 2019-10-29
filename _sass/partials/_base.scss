@@ -179,11 +179,27 @@ ul {
 img {
   width: 100%;
   height: auto;
-  padding: 1.5rem 0;
+}
+
+/* 16:9 Aspect Ratio */
+.img-wrapper {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
 }
 
 figure {
   position: relative;
+  img {
+    padding: 1.5rem 0;
+  }
 }
 
 figcaption {
