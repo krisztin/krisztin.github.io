@@ -2,37 +2,40 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
 
 // Typography
-$base-font-family: 'Roboto',
-sans-serif !default;
-$base-font-size: 16px !default;
+$base-font-family: 'Roboto', sans-serif !default;
+$base-font-size: 18px !default;
 $base-font-weight: 400 !default;
 $small-font-size: $base-font-size * 0.875 !default;
 $base-line-height: 1.7 !default;
 
 // Colours
 $colour-primary: #523a7c !default;
-$colour-primary--dark: #3A2957 !default;
+$colour-primary--dark: #3a2957 !default;
 $colour-primary--light: #8961ce !default;
 $colour-secondary: #ffd60c !default;
-$colour-white: #fdfdfd !default;
+$colour-blue: #0db6ff !default;
+$colour-pink: #fe08d7 !default;
+$colour-black: #373030 !default;
 
 $text-color: #212121 !default;
-$text-color-light: #fff !default;
-$text-link-color: $colour-primary;
+$text-colour-light: #fdfdfd !default;
 
 $colour-grey: #949494 !default;
 $colour-grey--light: lighten($colour-grey, 30%) !default;
 $colour-grey--dark: darken($colour-grey, 25%) !default;
 
 // Alignment & Spacings
-$spacing-unit: 30px !default;
+$spacing-unit: 36px !default;
 $content-width: 1100px !default;
-$text-width: 850px !default;
+$text-width: 900px !default;
+$mobile-width: $content-width + ($base-font-size * 2);
+/*because of full-width images, padding is added on content, not the wrapper which needs to be done on widths smaller than content-width*/
 
 // Media query breakpoints
-$mobile: 400px !default;
-$on-laptop: 800px !default;
+$mobile: 600px !default;
+$laptop: 800px !default;
 
+// Element mixins and extends
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
     @content;
@@ -43,7 +46,6 @@ $on-laptop: 800px !default;
   font-size: $base-font-size * $ratio;
 }
 
-// Element mixins and extends
 $border-radius: 5px !default;
 
 %clearfix:after {
@@ -52,11 +54,30 @@ $border-radius: 5px !default;
   clear: both;
 }
 
-@mixin skew($degree: -7deg) {
+@mixin skew($degree: -3deg) {
   -webkit-transform: skewY($degree);
   transform: skewY($degree);
   -webkit-transform-origin: 0;
   transform-origin: 0;
+}
+
+@mixin decor(
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null,
+  $height: null,
+  $width: null,
+  $colour: $colour-secondary
+) {
+  top: $top;
+  bottom: $bottom;
+  left: $left;
+  right: $right;
+  height: $height;
+  width: $width;
+  background-color: $colour;
+  position: absolute;
 }
 
 @mixin flex {
@@ -71,4 +92,4 @@ $border-radius: 5px !default;
 }
 
 // Import partials.
-@import 'minima/base', 'minima/layout';
+@import 'partials/normalise', 'partials/base', 'partials/layout';
