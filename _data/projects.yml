@@ -27,7 +27,7 @@
     - UX/UI
 - title: Twitch fetch
   description: Working with the Twitch API to build a page showing user statuses along with stream info. Made for a front-end code challenge.
-  img: project_twitch.jpg
+  img: project_twitch.png
   primary-link: https://codepen.io/krisztiiin/full/wrVWZJ/
   tags:
     - .js
@@ -35,7 +35,7 @@
 - title: WordPress theming
   description: <p>What’s the best way to learn WordPress theme building? Well, building a theme.</p>
     <p>I have learned about WordPress functions, the hierarchy and creating and adding a template-part amongst many other things.</p>
-  img: proj_catshelter.jpg
+  img: project_wp.png
   github-link: https://github.com/krisztin/wp-shelter-theme
   tags:
     - WorPress
