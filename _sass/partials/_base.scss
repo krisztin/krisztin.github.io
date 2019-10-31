@@ -296,7 +296,6 @@ button {
     @include transition;
     border: 0 solid transparent;
     content: '';
-    height: 24px;
     position: absolute;
     width: 60%;
   }
@@ -342,7 +341,8 @@ a.btn-light {
 .btn-light--ghost {
   border: $colour-primary 3px solid;
   color: $colour-primary;
-  padding: 14px;
+  padding-top: 1.2rem;
+  padding-bottom: 0.9rem;
 }
 
 a.btn-light--text {
