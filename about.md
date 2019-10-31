@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me
+title: About
 ---
 
 From videos to social media posts, emails and websites this digital veteran has seen it all and made it organically convert better. The secret? Knowing who the audience is and what they want and anticipating their needs; mainly by looking at lots of analytics dashboards and Excel spreadsheets but also by gathering user feedback.
