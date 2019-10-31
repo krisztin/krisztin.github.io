@@ -1,5 +1,4 @@
 @charset "utf-8";
-// @import url('https://fonts.googleapis.com/css?family=Raleway|Roboto');
 
 // Typography
 $base-font-family: 'Roboto', sans-serif !default;
@@ -17,8 +16,8 @@ $colour-blue: #0db6ff !default;
 $colour-pink: #fe08d7 !default;
 $colour-black: #373030 !default;
 
-$text-color: #212121 !default;
-$text-colour-light: #fdfdfd !default;
+$text-colour: #212121 !default;
+$text-colour--light: #fdfdfd !default;
 
 $colour-grey: #949494 !default;
 $colour-grey--light: lighten($colour-grey, 30%) !default;
