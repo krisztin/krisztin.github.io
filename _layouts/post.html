@@ -5,10 +5,6 @@ layout: page
 
   <header>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
-      </time>
       <span class="post-tags"> | 
         <i class="fas fa-tags"></i>
         {% if post %}
