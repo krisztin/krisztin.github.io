@@ -432,12 +432,12 @@ Stripes
   background-color: $colour-primary;
   color: $text-colour--light;
   border-radius: 5px;
+  &:visited {
+    color: $text-colour--light;
+  }
   &:hover {
     background-color: $colour-secondary;
     color: $text-colour;
-  }
-  &:visited {
-    color: $text-colour--light;
   }
 }
 
@@ -458,6 +458,12 @@ a.post-tag {
 
 .tagpage {
   margin-left: 1.2rem;
+}
+
+.post-tags {
+  img {
+    width: 1rem;
+  }
 }
 
 /**
