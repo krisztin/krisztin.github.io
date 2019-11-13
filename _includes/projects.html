@@ -15,7 +15,7 @@
       <p>{{ project.description }}</p>
       <div>
       {% if project.github-link %}
-      <a class="btn btn-light" href="{{ project.github-link }}" target="_blank">
+      <a class="btn btn-light" href="{{ project.github-link }}" target="_blank" aria-label="{{ project.title }} code and docs">
         <svg viewBox="0 0 16 16" class="svg-social-icon" aria-hidden="true">
           <use xlink:href="{{ '/assets/img/social-icons.svg#github' | relative_url }}"></use>
         </svg> Code && Docs
