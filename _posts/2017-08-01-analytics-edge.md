@@ -12,16 +12,16 @@ This was definitely much much deeper than I have ever dipped my foot into the fi
 {% include img.html file='brainscan.png' alt='it crowd gag'
 caption="Predictive Diagnosis: Discovering patterns for disease detection" -%}
 
-#### Takeaway
+## Takeaway
 
 - R skills
 - Deeper knowledge of Statistics
 
-#### Conclusion
+## Conclusion
 
-I will keep Data Science as a hobby but I will probably (definitely) not end up working in Machine Learning or AIs.
+I will keep Data Science as a hobby but I will probably (definitely) not end up working in Machine Learning.
 
-#### Until then
+## Until then
 
 The journalist-engineers at [The Pudding](https://pudding.cool/) are doing some fascinating stuff that's worth a look and are a source of motivation. It's a wonderful mash of thorough research, data science, scrollytelling with JS/Python/R and stunning data visualisation. The below interactive visual is from their [article on Seeing Earth from Outer Space](https://pudding.cool/2017/10/satellites/).
 

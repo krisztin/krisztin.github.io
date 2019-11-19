@@ -6,31 +6,31 @@ tags: [accessibility]
 excerpt: "<p>Spoiler alert: the answer is no</p>"
 ---
 
-### The challenge
+## The challenge
 
 Find an accessible CAPTCHA.
 
 _Spoiler alert:_ there isn’t really one out there, unless you are ready to sacrifice security.
 
-### The research
+## The research
 
 Went on a research journey through W3C, WebAim (web accessibility in mind) and Stackoverflow.
 Conclusion: if we want to be perfectly accessible we should forget CAPTCHAs and use Honeypot.
 
-#### CAPTCHAs
+## CAPTCHAs
 
-##### Invisible CAPTCHA
+### Invisible CAPTCHA
 
 Most accessible of CAPTCHAs when it’s not triggered... however it seems it frequently goes off when using screen readers and assistive technology in which case it reverts back to noCAPTCHA/reCAPTCHA which is what we are trying to avoid as [these are both very inaccessible](https://webaim.org/discussion/mail_thread?thread=8034).
 
-##### TextCAPTCHA
+### TextCAPTCHA
 
 - One of the - if not the most - accessible form of CAPTCHA
 - It is a security risk (a clever enough script can pass it)
 - Relies on 7+ yr cognitive abilities
 - Adds about 10-20 seconds to time spent on solving when someone’s first language is not English
 
-#### Honeypot
+### Honeypot
 
 Protects from random spam (which was our main issue) but not particularly secure.
 
