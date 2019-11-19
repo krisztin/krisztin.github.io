@@ -32,6 +32,16 @@
   tags:
     - .js
     - UX/UI
+- title: ReCat
+  description: High-fidelity prototype for a cat adoption app
+  img: project_recat.png
+  primary-link: https://www.figma.com/file/fy2aw8Y1z6iuYeeH7tCiOPfa/ReCat?node-id=0%3A1
+  github-link: https://github.com/krisztin/recat
+  tags:
+    - prototype
+    - React
+    - Sass
+    - UX/UI
 - title: WordPress theming
   description: <p>What’s the best way to learn WordPress theme building? Well, building a theme.</p>
     <p>I have learned about WordPress functions, the hierarchy and creating and adding a template-part amongst many other things.</p>
