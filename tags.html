@@ -9,7 +9,7 @@ exclude: true
 {% for tag in site.tags %}
   <div class="tag-group">
     {% capture tag_name %}{{ tag | first }}{% endcapture %}
-    <h2 class="tag-head" id="{{tag_name}}">{{ tag_name }}</h2>
+    <h2 class="tag-head" id="{{tag_name}}"><img src="{{ site.url }}/assets/img/tag.svg" alt="" aria-hidden="true" /> {{ tag_name }}</h2>
     {% for post in site.tags[tag_name] %}
     <article class="tagpage">
       <h3><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h3>

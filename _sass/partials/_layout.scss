@@ -460,10 +460,17 @@ a.post-tag {
   margin-left: 1.2rem;
 }
 
-.post-tags {
+.post-tags,
+.tag-head {
   img {
     width: 1rem;
+    padding: 0;
   }
+}
+
+h2.tag-head {
+  font-size: 1.5rem;
+  color: $text-colour;
 }
 
 /**
