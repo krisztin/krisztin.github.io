@@ -3,6 +3,7 @@ layout: post
 title: How I’ve failed to become a developer twice
 date: 2019-11-06 15:15:06 +0100
 tags: [rant, learning]
+excerpt: "Is there going to be a third time? This is a little self-reflection and looking far-far back in history...I'm old."
 ---
 
 And I’m about to fail the third time. To understand what went wrong we will need to travel back to a time pre-iPhone, when Internet Explorer was THE browser and Facebook was still invite only. The year when I’ve graduated a secondary school of economics (yes, in Hungary we make 13-14-year-olds choose their profession but that’s a story for another rant).
