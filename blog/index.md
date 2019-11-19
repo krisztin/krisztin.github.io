@@ -19,7 +19,7 @@ title: Blog
             {% endfor %}
             </span>
         </p>
-        {{ post.excerpt }}
+        <p>{{ post.excerpt }}</p>
     </article>
 {% endfor %}
 </div>
