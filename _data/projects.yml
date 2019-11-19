@@ -28,7 +28,7 @@
 - title: Twitch fetch
   description: Working with the Twitch API to build a page showing user statuses along with stream info. Made for a front-end code challenge.
   img: project_twitch.png
-  primary-link: https://codepen.io/krisztiiin/full/wrVWZJ/
+  primary-link: https://codepen.io/krisztiiin/pen/wrVWZJ
   tags:
     - .js
     - UX/UI
