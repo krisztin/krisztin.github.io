@@ -7,6 +7,16 @@
     - Chrome Extension
     - .js
     - UX/UI
+- title: Aesthetics vs Accessibility
+  description: I take a beautiful form design and turn it accessible.
+  img: https://res.cloudinary.com/du2vvjrb5/image/upload/v1582114103/krisztin/thumb-a11y_tur14i.png
+  primary-link: https://codepen.io/krisztiiin/pen/NWqReZq
+  tags:
+    - HTML5
+    - CSS3
+    - .js
+    - UX/UI
+    - a11y
 - title: Danskat
   description: Calculating Danish income tax is tedious and time consuming. My calculator cuts a few corners to save time.
   img: project_danskat.png
@@ -14,16 +24,6 @@
   github-link: https://github.com/krisztin/danskat
   tags:
     - ES6
-    - UX/UI
-- title: Is it raining?
-  description: My take on the classic weather app using HTML5 Geolocation and a weather API.<br><small>Check out oldfunc.js to see how much I've developed.</small>
-  img: project_weather.png
-  primary-link: https://krisztin.github.io/projects/fcc-weather/
-  github-link: https://github.com/krisztin/projects/tree/master/fcc-weather
-  tags:
-    - HTML5
-    - CSS3
-    - .js
     - UX/UI
 - title: Twitch fetch
   description: Working with the Twitch API to build a page showing user statuses along with stream info. Made for a front-end code challenge.
