@@ -17,6 +17,15 @@
     - .js
     - UX/UI
     - a11y
+- title: Scraper
+  description: My first dip into Node.js with a Cheerio scraper script looking for Business Analyst openings.
+  img: project_scraper.png
+  github-link: https://github.com/krisztin/gitlab-scraper
+  tags:
+    - Node.js
+    - Cheerio
+    - Nodecron
+    - Nodemailer
 - title: Danskat
   description: Calculating Danish income tax is tedious and time consuming. My calculator cuts a few corners to save time.
   img: project_danskat.png
@@ -31,16 +40,6 @@
   primary-link: https://codepen.io/krisztiiin/pen/wrVWZJ
   tags:
     - .js
-    - UX/UI
-- title: ReCat
-  description: High-fidelity prototype for a cat adoption app
-  img: project_recat.png
-  primary-link: https://www.figma.com/file/fy2aw8Y1z6iuYeeH7tCiOPfa/ReCat?node-id=0%3A1
-  github-link: https://github.com/krisztin/recat
-  tags:
-    - prototype
-    - React
-    - Sass
     - UX/UI
 - title: WordPress theming
   description: <p>What’s the best way to learn WordPress theme building? Well, building a theme.</p>
